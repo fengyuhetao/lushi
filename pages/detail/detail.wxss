@@ -1,0 +1,88 @@
+page{
+    background-color: #4C3674;
+    font-style: "微软黑体";
+}
+
+.res-title {
+    display: block;
+    color: #FFFFFF;
+    font-size: 40rpx;
+    margin-left: 12rpx;
+    margin-top: 20rpx;
+    margin-bottom: 20rpx;
+}
+
+.view-icon {
+    width: 55rpx;
+    height: 25rpx;
+    float: 
+    margin-left: 15rpx;
+}
+
+.view-number {
+    color: #B796EA;
+    font-size: 30rpx;
+}
+
+.view-date {
+    margin-left: 20rpx;
+    font-size: 30rpx;
+    color: #B796EA;
+}
+
+.hr{
+    height:2rpx;
+    width: 96%;
+    margin-left: 2%;
+    margin-bottom: 20rpx;
+    margin-top: 20rpx;
+    background-color: #6E4FA6;
+    border-top: #6E4FA6 solid 1rpx ;
+    border-bottom: #6E4FA6 solid 1rpx;
+    opacity:0.2;
+}
+
+.res-detail {
+    display: block;
+    color: #FFFFFF;
+    font-size: 35rpx;
+    margin-left: 15rpx;
+    line-height: 50rpx;
+}
+
+.res-icon {
+    margin-left: 15rpx;
+    width: 60rpx;
+    height: 60rpx;
+    float: left;
+}
+
+.about-res {
+    color: #B99AEC;
+    margin-left: 12rpx;
+    font-size: 40rpx;
+    line-height: 60rpx;
+}
+
+.about-res-all {
+    margin-top: 20rpx;
+}
+
+.about-res-detail {
+    width: 350rpx;
+    display: block;
+    margin-left: 12rpx;
+    margin-right: 12rpx;
+    float: left;
+}
+
+.about-res-detail image {
+    width: 350rpx;
+    height: 246rpx;
+}
+
+.about-res-detail text {
+    color: white;
+    font-size: 30rpx;
+    width: 350rpx;
+}

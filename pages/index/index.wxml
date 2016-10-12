@@ -1,0 +1,54 @@
+<view>
+  <view>
+    <swiper indicator-dots="true" autoplay="true" interval="3000" duration="500">
+        <swiper-item>
+          <image src="../assets/imgs/index/swiper.png" class= "swiper-item"/>
+        </swiper-item>
+        <swiper-item>
+          <image src="../assets/imgs/index/swiper1.png" class= "swiper-item"/>
+        </swiper-item>
+        <swiper-item>
+          <image src="../assets/imgs/index/swiper2.png" class= "swiper-item"/>
+        </swiper-item>
+        <swiper-item>
+          <image src="../assets/imgs/index/swiper3.png" class= "swiper-item"/>
+        </swiper-item>
+    </swiper>
+  </view>
+  <view class= "res">
+    <view class= "res-view" bindtap= "viewDetail">
+      <image class= "res-image" mode= "scaleToFill" src="../assets/imgs/index/image1.png" />
+      <text class= "res-title">{{"[新闻]好友争霸! 友谊赛！ 友谊赛...\n"}}</text>
+      <text class= "res-summary">{{"呆萌新的正确姿势：友谊赛做任务是...\n"}}</text>
+      <text class= "res-date">1天前</text>      
+    </view>
+    <view class= "hr"></view>
+    <view class= "res-view" bindtap= "viewDetail">
+      <image class= "res-image" src="../assets/imgs/index/image2.png" />
+      <text class= "res-title">{{"[新闻]好友争霸! 友谊赛！ 友谊赛...\n"}}</text>
+      <text class= "res-summary">{{"呆萌新的正确姿势：友谊赛做任务是...\n"}}</text>
+      <text class= "res-date">1天前</text>      
+    </view>
+    <view class= "hr"></view>
+    <view class= "res-view" bindtap= "viewDetail">
+      <image class= "res-image" src="../assets/imgs/index/image3.png" />
+      <text class= "res-title">{{"[新闻]好友争霸! 友谊赛！ 友谊赛...\n"}}</text>
+      <text class= "res-summary">{{"呆萌新的正确姿势：友谊赛做任务是...\n"}}</text>
+      <text class= "res-date">1天前</text>      
+    </view>
+    <view class= "hr"></view>
+    <view class= "res-view" bindtap= "viewDetail">
+      <image class= "res-image" src="../assets/imgs/index/image4.png" />
+      <text class= "res-title">{{"[新闻]好友争霸! 友谊赛！ 友谊赛...\n"}}</text>
+      <text class= "res-summary">{{"呆萌新的正确姿势：友谊赛做任务是..\n"}}</text>
+      <text class= "res-date">1天前</text>      
+    </view>
+  </view>
+
+  <view class="body-view">
+    <loading hidden="false">
+      加载中...
+    </loading>
+  </view>
+</view>
+

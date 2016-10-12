@@ -1,0 +1,83 @@
+<view>
+    <view class="tab">
+        <text bindtap= "changetap" id= "mode-kuangye" style= "background-color: {{kuangye_back}}; color: {{kuangye_text}}">狂野模式</text>
+        <text bindtap= "changetap" id="mode-biaozhun" style= "background-color: {{biaozhun_back}}; color: {{biaozhun_text}}">标准模式</text>
+    </view>
+    <view class= "tab-kuangye" style="display: {{kuangye_show}};">
+        <view class= "single-hero">
+            <image src= "../assets/imgs/cardTankuang/hero1.png" />
+            <text>德鲁伊</text>
+        </view>
+        <view class= "single-hero">
+            <image src= "../assets/imgs/cardTankuang/hero2.png" />
+            <text>猎人</text>
+        </view>
+        <view class= "single-hero">
+            <image src= "../assets/imgs/cardTankuang/hero3.png" />
+            <text>法师</text>
+        </view>
+        <view class= "single-hero">
+            <image src= "../assets/imgs/cardTankuang/hero1.png" />
+            <text>德鲁伊</text>
+        </view>
+        <view class= "single-hero">
+            <image src= "../assets/imgs/cardTankuang/hero2.png" />
+            <text>猎人</text>
+        </view>
+        <view class= "single-hero">
+            <image src= "../assets/imgs/cardTankuang/hero3.png" />
+            <text>法师</text>
+        </view>
+        <view class= "single-hero">
+            <image src= "../assets/imgs/cardTankuang/hero1.png" />
+            <text>德鲁伊</text>
+        </view>
+        <view class= "single-hero">
+            <image src= "../assets/imgs/cardTankuang/hero2.png" />
+            <text>猎人</text>
+        </view>
+        <view class= "single-hero">
+            <image src= "../assets/imgs/cardTankuang/hero3.png" />
+            <text>法师</text>
+        </view>
+    </view>
+    <view style="display: {{biaozhun_show}}" class= "tab-biaozhun">
+        <view class= "single-hero">
+            <image src= "../assets/imgs/cardTankuang/hero1.png" />
+            <text>德鲁伊</text>
+        </view>
+        <view class= "single-hero">
+            <image src= "../assets/imgs/cardTankuang/hero2.png" />
+            <text>猎人</text>
+        </view>
+        <view class= "single-hero">
+            <image src= "../assets/imgs/cardTankuang/hero3.png" />
+            <text>法师</text>
+        </view>
+        <view class= "single-hero">
+            <image src= "../assets/imgs/cardTankuang/hero1.png" />
+            <text>德鲁伊</text>
+        </view>
+        <view class= "single-hero">
+            <image src= "../assets/imgs/cardTankuang/hero2.png" />
+            <text>猎人</text>
+        </view>
+        <view class= "single-hero">
+            <image src= "../assets/imgs/cardTankuang/hero3.png" />
+            <text>法师</text>
+        </view>
+        <view class= "single-hero">
+            <image src= "../assets/imgs/cardTankuang/hero1.png" />
+            <text>德鲁伊</text>
+        </view>
+        <view class= "single-hero">
+            <image src= "../assets/imgs/cardTankuang/hero2.png" />
+            <text>猎人</text>
+        </view>
+        <view class= "single-hero">
+            <image src= "../assets/imgs/cardTankuang/hero3.png" />
+            <text>法师</text>
+        </view>
+    </view>
+    <image src= "../assets/imgs/cardTankuang/close.png" class= "close"/>
+</view>
