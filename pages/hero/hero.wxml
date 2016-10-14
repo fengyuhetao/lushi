@@ -1,0 +1,112 @@
+<view>
+    <view class= "head">
+        <image class= "logo" src= "../assets/imgs/hero/hero.png"/>
+        <text class= "mode">标准</text>
+        <view class="rectangle-all">
+            <view class= "rectangle-single" style= "left: 0rpx">
+                <text>1</text>
+                <view class= "rectangle" style= "height: 50rpx;"></view>
+                <text>0</text>
+            </view>
+            <view class= "rectangle-single" style= "left: 25rpx;">
+                <text>1</text>
+                <view class= "rectangle" style= "height: 60rpx;"></view>
+                <text>1</text>
+            </view>
+            <view class= "rectangle-single" style= "left: 50rpx;">
+                <text>10</text>
+                <view class= "rectangle" style= "height: 20rpx;"></view>
+                <text>2</text>
+            </view>
+            <view class= "rectangle-single" style= "left: 75rpx;">
+                <text>1</text>
+                <view class= "rectangle" style= "height: 30rpx;"></view>
+                <text>3</text>
+            </view>
+            <view class= "rectangle-single" style= "left: 100rpx;">
+                <text>1</text>
+                <view class= "rectangle" style= "height: 40rpx;"></view>
+                <text>4</text>
+            </view>
+            <view class= "rectangle-single" style= "left: 125rpx;">
+                <text>1</text>
+                <view class= "rectangle" style= "height: 10rpx;"></view>
+                <text>5</text>
+            </view>
+            <view class= "rectangle-single" style= "left: 150rpx;">
+                <text>1</text>
+                <view class= "rectangle" style= "height: 100rpx;"></view>
+                <text>6</text>
+            </view>
+        </view>
+        <image class= "jieping-logo" src= "../assets/imgs/hero/jieping.png" />
+        <text class= "jieping-text">截屏</text>
+    </view>
+    <view class= "title">
+        <text>卡组标题</text>
+        <text>德鲁伊</text>
+    </view>
+    <view class= "cardgroup">
+        <view class= "single-card">
+            <view class= "card-need">0</view>
+            <image class= "pentagon" src= "../assets/imgs/hero/pentagon.png" />
+            <image class= "sm-hero" src= "../assets/imgs/hero/sm_hero.png" />
+            <view class= "card-number">2</view>
+        </view>
+        <view class= "single-card">
+            <view class= "card-need">0</view>
+            <image class= "pentagon" src= "../assets/imgs/hero/pentagon.png" />
+            <image class= "sm-hero" src= "../assets/imgs/hero/sm_hero.png" />
+            <view class= "card-number">2</view>
+        </view>
+        <view class= "single-card">
+            <view class= "card-need">0</view>
+            <image class= "pentagon" src= "../assets/imgs/hero/pentagon.png" />
+            <image class= "sm-hero" src= "../assets/imgs/hero/sm_hero.png" />
+            <view class= "card-number">2</view>
+        </view>
+        <view class= "single-card">
+            <view class= "card-need">0</view>
+            <image class= "pentagon" src= "../assets/imgs/hero/pentagon.png" />
+            <image class= "sm-hero" src= "../assets/imgs/hero/sm_hero.png" />
+            <view class= "card-number">2</view>
+        </view>
+    </view>
+    <view class= "consume">
+        <view>消耗：80</view>
+        <image src= "../assets/imgs/hero/consume.png" />
+    </view>
+    <view class= "statistics">
+        <view class= "statis-subject">卡组统计:</view>
+        <view class= "single-statis">
+            <view class= "statis-title">免费</view>
+            <image class= "statis-icon" src= "../assets/imgs/hero/free.png" />
+            <view class= "statis-rectangle" style= "width: 200rpx;"></view>
+            <view class= "statis-number">2</view>
+        </view>
+        <view class= "single-statis">
+            <view class= "statis-title">普通</view>
+            <image class= "statis-icon" src= "../assets/imgs/hero/common.png" />
+            <view class= "statis-rectangle" style= "width: 200rpx;"></view>
+            <view class= "statis-number">2</view>
+        </view>
+        <view class= "single-statis">
+            <view class= "statis-title">稀有</view>
+            <image class= "statis-icon" src= "../assets/imgs/hero/rare.png" />
+            <view class= "statis-rectangle" style= "width: 200rpx;"></view>
+            <view class= "statis-number">20</view>
+        </view>
+        <view class= "single-statis">
+            <view class= "statis-title">史诗</view>
+            <image class= "statis-icon" src= "../assets/imgs/hero/epic.png" />
+            <view class= "statis-rectangle" style= "width: 200rpx;"></view>
+            <view class= "statis-number">2</view>
+        </view>
+        <view class= "single-statis">
+            <view class= "statis-title">传说</view>
+            <image class= "statis-icon" src= "../assets/imgs/hero/legend.png" />
+            <view class= "statis-rectangle" style= "width: 200rpx;"></view>
+            <view class= "statis-number">2</view>
+        </view>
+    </view>                                                                                                                         
+</view>

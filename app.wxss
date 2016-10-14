@@ -1,4 +1,5 @@
 /**app.wxss**/
+/** 微信小程序宽度 760rpx **/
 .container {
   height: 100%;
   display: flex;

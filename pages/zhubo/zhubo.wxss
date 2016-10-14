@@ -9,35 +9,111 @@ page {
 }
 
 .head {
-    width: 108rpx;
-    height: 108rpx;
+    width: 105rpx;
+    height: 105rpx;
     border-radius: 50%;
     border: 5rpx solid white;
     position: absolute;
     z-index: 10;
-    top: 182rpx;
+    top: 183rpx;
     left: 22rpx;
 }
-.name_res {
+.name-res {
     position: absolute;
     display: block;
-    width: 200rpx;
+    width: 150rpx;
     height: 108rpx;
-    z-index: 10;
-    top: 182rpx;
-    left: 22rpx;
+    z-index: 9;
+    top: 185rpx;
+    left: 92rpx;
     background-color: black;
+    opacity: 0.11;
+}
+
+.banyuan {
+    position: absolute;
+    display: block;
+    width: 108rpx;
+    height: 108rpx;
+    border-radius: 50%;
+    z-index: 8;
+    top: 185rpx;
+    left: 188rpx;
+    background-color: black;
+    opacity: 0.1;
 }
 
 .nickname {
+    display: block;
+    margin-top: 10px;
+    margin-left: 60rpx;
+    font-size: 30rpx;
     color: white;
 }
 
-.tab text {
+.person-res {
+    display: block;
+    margin-left: 45rpx;
+    margin-top: 10rpx;
     color: white;
-    height: 70rpx;
-    line-height: 70rpx;
-    font-size: 50rpx;
+    font-size: 2px;
+}
+
+.tab text {
+    display: inline-block;
+    color: white;
+    height: 60rpx;
+    line-height: 60rpx;
+    font-size: 40rpx;
     text-align: center;
     width: 33%;
+}
+.underline {
+    display: block;
+    width: 80rpx;
+    height: 5rpx;
+    background-color: white;
+}
+
+.res {
+  margin-left: 15rpx;
+  display: flex;
+  flex-direction: column;
+}
+.res-view {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-bottom: 20rpx;
+  margin-top: 20rpx;
+}
+.res-image {
+  width: 200rpx;
+  height: 160rpx;
+  float: left;
+  margin-right: 20rpx;
+  margin-left: 10rpx;
+}
+.res-title {
+  color: white;
+  font-size: 30rpx;
+}
+.res-summary {
+  color: #ACA4BC;
+  font-size: 25rpx;
+}
+.res-date {
+  color: #ACA4BC;
+  font-size: 25rpx;
+  position: absolute;
+  bottom: 0rpx;
+  left: 230rpx;
+}
+.hr{
+    height:2px;
+    width: 100%;
+    background-color: black;
+    border-top: #685195 solid 1px ;
+    border-bottom: #685195 solid 1px;
+    opacity:0.2;
 }

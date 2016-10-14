@@ -1,0 +1,200 @@
+page {
+    background-color: #4C3674;
+    font-style: "微软黑体";
+}
+
+.head {
+    color: white;
+    position: relative;
+    height: 200rpx;
+    width: 100%;
+}
+
+.head image {
+    width: 150rpx;
+    height: 150rpx;
+    margin-left: 22rpx;
+    margin-top: 50rpx;
+    float: left;
+}
+
+.head .mode {
+    display: block;
+    width: 110rpx;
+    height: 45rpx;
+    font-size: 25rpx;
+    line-height: 45rpx;
+    background-image: url("../assets/imgs/hero/modeback.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 6rpx;
+    left: 190rpx;
+    position: absolute;
+    bottom: 0rpx;
+}
+
+.head .rectangle-all {
+    position: relative;
+    display: block;
+    height: 200rpx;
+    float: left;
+    margin-left: 120rpx;
+}
+
+.head .rectangle-single {
+    display: block;
+    width: 25rpx;
+    color: #B99AEC;
+    bottom: 0rpx;
+    position: absolute;
+    text-align: center;
+}
+
+.head .rectangle-single text {
+    font-size: 20rpx;
+}
+
+.head .rectangle-single .rectangle {
+    display: block;
+    margin-left: 5rpx;
+    width: 15rpx;
+    background-color: #B99AEC;
+}
+
+.head .jieping-logo {
+    float: right;
+    width: 50rpx;
+    height: 45rpx;
+    margin-right: 35rpx;
+}
+
+.head .jieping-text {
+    float: right;
+    font-size: 30rpx;
+    margin-top: 100rpx;
+    margin-right: -77rpx;
+}
+
+.title {
+    display: block;
+    margin-top: 16rpx;
+    margin-left: 22rpx;
+    color: white;
+}
+
+.title text {
+    display: block;
+    margin-bottom: 16rpx;
+}
+
+.cardgroup .single-card {
+    position: relative;
+    margin-left: 15rpx;
+    margin-right: 15rpx;
+    margin-bottom: 20rpx;
+    height: 60rpx;
+    width: 340rpx;
+    color: white;
+    float: left;
+}
+
+.cardgroup .single-card .pentagon {
+    width: 70rpx;
+    height: 60rpx;
+    z-index: -1;
+}
+
+.cardgroup .single-card .sm-hero {
+    position: relative;
+    width: 245rpx;
+    height: 60rpx;
+    margin-left: -18rpx;
+    z-index: -2;
+}
+
+.cardgroup .single-card .card-need {
+    position: absolute;
+    width: 30rpx;
+    text-align: center;
+    height: 60rpx;
+    line-height: 60rpx;
+    display: inline-block;
+    left: 21rpx;
+}
+
+.cardgroup .single-card .card-number {
+    position: absolute;
+    width: 30rpx;
+    text-align: center;
+    height: 60rpx;
+    line-height: 50rpx;
+    display: inline-block;
+    background-color: #7F4DD2;
+    left: 297rpx;
+}
+
+.consume {
+    margin-top: 40rpx;
+    margin-left: 22rpx;
+}
+
+.consume view {
+    color: white;
+    height: 50rpx;
+    line-height: 50rpx;
+}
+
+.consume image {
+    display: inline-block;
+    width: 45rpx;
+    height: 45rpx;
+    margin-left: 170rpx;
+}
+
+.statistics {
+    width: 96%;
+    margin: auto;
+    background-color: #362057;
+    font-size: 40rpx;
+    padding-bottom: 30rpx;
+}
+
+.statistics .statis-subject {
+    display: block;
+    color: white;
+    margin-left: 25rpx;
+    padding-top: 25rpx;
+    margin-top: 25rpx;
+}
+
+.statistics .single-statis {
+    margin-top: 40rpx;
+    margin-left: 25rpx;
+}
+
+.statistics .single-statis .statis-title {
+    color: #B293E4;
+    height: 50rpx;
+    line-height: 50rpx;
+    display: inline-block;
+}
+
+.statistics .single-statis .statis-icon {
+    width: 20rpx;
+    height: 30rpx;
+    margin-left: 15rpx;
+    display: inline-block;
+}
+
+.statistics .single-statis .statis-rectangle {
+    height: 25rpx;
+    margin-left: 25rpx;
+    display: inline-block;
+    background-color: #B99AEC;
+}
+
+.statistics .single-statis .statis-number {
+    color: white;
+    margin-left: 25rpx;
+    display: inline-block;
+}

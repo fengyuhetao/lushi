@@ -1,8 +1,10 @@
 {
   "pages":[
+    "pages/zhubo_2/zhubo_2",
+    "pages/hero/hero",
+    "pages/zhubo/zhubo",
     "pages/index/index",
     "pages/cardTankuang/cardTankuang",
-    "pages/zhubo/zhubo",
     "pages/video/video",
     "pages/kazu/kazu",
     "pages/sets/sets",
@@ -22,27 +24,27 @@
       "pagePath": "pages/index/index",
       "text": "资讯",
       "iconPath": "pages/assets/imgs/index/icon1.png",
-      "selectedIconPath": "pages/assets/imgs/index/icon1.png"
+      "selectedIconPath": "pages/assets/imgs/index/icon1_light.png"
     }, {
       "pagePath": "pages/video/video",
       "text": "视频",
       "iconPath": "pages/assets/imgs/index/icon2.png",
-      "selectedIconPath": "pages/assets/imgs/index/icon2.png"      
+      "selectedIconPath": "pages/assets/imgs/index/icon2_light.png"      
     }, {
-      "pagePath": "pages/zhubo/zhubo",
+      "pagePath": "pages/zhubo_2/zhubo_2",
       "text": "主播",
       "iconPath": "pages/assets/imgs/index/icon3.png",
-      "selectedIconPath": "pages/assets/imgs/index/icon3.png"      
+      "selectedIconPath": "pages/assets/imgs/index/icon3_light.png"      
     }, {
       "pagePath": "pages/kazu/kazu",
       "text": "卡组",
       "iconPath": "pages/assets/imgs/index/icon4.png",
-      "selectedIconPath": "pages/assets/imgs/index/icon4.png"
+      "selectedIconPath": "pages/assets/imgs/index/icon4_light.png"
     }, {
       "pagePath": "pages/sets/sets",
       "text": "设置",
       "iconPath": "pages/assets/imgs/index/icon5.png",
-      "selectedIconPath": "pages/assets/imgs/index/icon5.png"      
+      "selectedIconPath": "pages/assets/imgs/index/icon5_light.png"      
     } 
     ]
   }

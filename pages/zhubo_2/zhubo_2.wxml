@@ -1,0 +1,43 @@
+<view>
+    <view class= "head">
+        <view class= "title" bindtap="dropContent">主播</view>
+        <image class= "{{style}}" src= "../assets/imgs/zhubo_2/drop.png" bindtap="dropContent"/>
+        <view style= "display: {{is_show}};">
+            <view class= "triangle"></view>
+            <view class= "rectangle">
+                <view bindtap="changeType" class= "type" style= "background-color: #898BDB; color: white;">全部</view>
+                <view bindtap="changeType" class= "type">全民</view>
+                <view bindtap="changeType" class= "type">熊猫</view>
+                <view bindtap="changeType" class= "type">斗鱼</view>
+            </view>
+        </view>
+    </view>
+    <view class= "content">
+        <view class= "single-zhubo">
+            <view class= "shuiyin">全民</view>
+            <image src= "../assets/imgs/zhubo_2/zhubo.png" />
+            <text>秋日</text>
+        </view>
+        <view class= "single-zhubo">
+            <view class= "shuiyin">全民</view>        
+            <image src= "../assets/imgs/zhubo_2/zhubo.png" />
+            <text>秋日</text>
+        </view>
+        <view class= "single-zhubo">
+            <image src= "../assets/imgs/zhubo_2/zhubo.png" />
+            <text>秋日</text>
+        </view>
+        <view class= "single-zhubo">
+            <image src= "../assets/imgs/zhubo_2/zhubo.png" />
+            <text>秋日</text>
+        </view>
+        <view class= "single-zhubo">
+            <image src= "../assets/imgs/zhubo_2/zhubo.png" />
+            <text>秋日</text>
+        </view>
+        <view class= "single-zhubo">
+            <image src= "../assets/imgs/zhubo_2/zhubo.png" />
+            <text>秋日</text>
+        </view>
+    </view>
+</view>
