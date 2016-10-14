@@ -1,0 +1,93 @@
+<view>
+    <view class= "search">
+        <view class= "search-icon"></view>
+        <input class= "search" placeholder= "请输入卡牌名称" placeholder-style= "color: #666666;"/>
+        <view class = "extra"></view>    
+    </view>
+    <view class= "content">
+        <view class= "left">
+            <view class= "tab">
+                <text class= "single-tab">职业</text>
+                <text class= "single-tab">稀有度</text>
+                <text class= "single-tab">费用</text>
+                <text class= "single-tab-last">类型</text>
+            </view>
+            <view class= "tab-choose" style= "display: block;">
+                <text class= "single-choose" style= "background-color: #898BDB; color: white;">全部</text>
+                <text class= "single-choose">免费</text>
+                <text class= "single-choose">普通</text>
+                <text class= "single-choose">普通</text>
+                <text class= "single-choose">普通</text>
+                <text class= "single-choose">普通</text>
+            </view>
+            <view class= "tab-choose" style= "display: none;">
+                <text class= "single-choose">全部</text>
+                <text class= "single-choose">免费</text>
+                <text class= "single-choose">普通</text>
+                <text class= "single-choose">普通</text>
+                <text class= "single-choose">普通</text>
+                <text class= "single-choose">普通</text>
+            </view>
+            <view class= "tab-choose" style= "display: none;">
+                <text class= "single-choose">全部</text>
+                <text class= "single-choose">免费</text>
+                <text class= "single-choose">普通</text>
+                <text class= "single-choose">普通</text>
+                <text class= "single-choose">普通</text>
+                <text class= "single-choose">普通</text>
+            </view>
+            <view class= "tab-choose" style= "display: none;">
+                <text class= "single-choose">全部</text>
+                <text class= "single-choose">免费</text>
+                <text class= "single-choose">普通</text>
+                <text class= "single-choose">普通</text>
+                <text class= "single-choose">普通</text>
+                <text class= "single-choose">普通</text>
+            </view>
+            <view style= "clear: both"></view>
+            <view class= "all-hero">
+                <view class= "single-hero">
+                    <image src= "../assets/imgs/create/hero.png" />
+                    <text>德鲁伊</text>
+                </view>
+                <view class= "single-hero">
+                    <image src= "../assets/imgs/create/hero.png" />
+                    <text>猎人</text>
+                </view>
+                <view class= "single-hero">
+                    <image src= "../assets/imgs/create/hero.png" />
+                    <text>法师</text>
+                </view>
+                <view class= "single-hero">
+                    <image src= "../assets/imgs/create/hero.png" />
+                    <text>德鲁伊</text>
+                </view>
+                <view class= "single-hero">
+                    <image src= "../assets/imgs/create/hero.png" />
+                    <text>猎人</text>
+                </view>
+                <view class= "single-hero">
+                    <image src= "../assets/imgs/create/hero.png" />
+                    <text>法师</text>
+                </view>
+                <view class= "single-hero">
+                    <image src= "../assets/imgs/create/hero.png" />
+                    <text>德鲁伊</text>
+                </view>
+                <view class= "single-hero">
+                    <image src= "../assets/imgs/create/hero.png" />
+                    <text>猎人</text>
+                </view>
+                <view class= "single-hero">
+                    <image src= "../assets/imgs/create/hero.png" />
+                    <text>法师</text>
+                </view>            
+            </view>
+        </view>
+        <view class= "right">
+            <image class= "sm_hero" src= "../assets/imgs/create/sm_hero.png" />
+            <image class= "modeback" src= "../assets/imgs/create/modeback.png" />
+            <view class= "mode">狂野</view>
+        <view>
+    </view>
+</view>
