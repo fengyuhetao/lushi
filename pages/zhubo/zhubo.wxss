@@ -1,6 +1,6 @@
 page {
     background-color: #362057; 
-    font-style: "微软黑体";
+    font-style: "等线";
 }
 
 .logo {

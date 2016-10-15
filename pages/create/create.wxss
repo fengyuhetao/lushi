@@ -57,7 +57,7 @@ page {
     position: absolute;
     right: 0rpx;
     width: 250rpx;
-    height: 1150rpx;
+    height: 94%;
     background-color: white;
 }
 
@@ -243,6 +243,13 @@ page {
     line-height: 60rpx;
     background-color: #7F4DD2;
     margin: 20rpx auto;
+}
+
+.modal .input {
+    margin: 30rpx auto;
+    border: 4rpx solid #B99AEC;
+    width: 96%;
+    height: 40rpx;
 }
 
 

@@ -119,6 +119,12 @@
                     <image class= "hero-logo" src= "../assets/imgs/create/hero_logo.png" />
                     <view class= "card-number">2</view>
                 </view>
+                <view class= "single-card">
+                    <view class= "card-need">0</view>
+                    <image class= "pentagon" src= "../assets/imgs/create/pentagon.png" />
+                    <image class= "hero-logo" src= "../assets/imgs/create/hero_logo.png" />
+                    <view class= "card-number">2</view>
+                </view>
             </view>
             <view class= "footer">
                 <text class= "kazu">0/3</text>
@@ -127,16 +133,11 @@
             </view>
         <view>
     </view>
-    <modal title="标题" confirm-text="confirm" cancel-text="cancel" hidden="{{modalHidden}}" bindconfirm="modalChange" bindcancel="modalChange">
-        这是对话框的内容。
-        </modal>
+    <modal hidden="{{modalHidden}}" bindconfirm="modalChange" bindcancel="modalChange">
+        尚未选满30张卡片是否直接保存?
+    </modal>
 
-        <modal class="modal" hidden="{{modalHidden2}}" no-cancel bindconfirm="modalChange2">
-        <view> 内容可以插入节点 </view>
-        </modal>
-
-        <view class="btn-area">
-        <button type="default" bindtap="modalTap">点击弹出modal</button>
-        <button type="default" bindtap="modalTap2">点击弹出modal2</button>
-    </view>
+    <modal title= "自定义卡套名称" class="modal" hidden="{{modalHidden2}}" no-cancel bindconfirm="modalChange2">
+        <input type= "text" class= "input"/>
+    </modal>
 </view>
