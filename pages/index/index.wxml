@@ -1,18 +1,11 @@
 <view>
   <view>
     <swiper indicator-dots="true" autoplay="true" interval="3000" duration="500">
+      <block wx:for="{{sliders}}">
         <swiper-item>
-          <image src="../assets/imgs/index/swiper.png" class= "swiper-item"/>
+          <image src="{{item.slide_url}}" class= "swiper-item"/>
         </swiper-item>
-        <swiper-item>
-          <image src="../assets/imgs/index/swiper1.png" class= "swiper-item"/>
-        </swiper-item>
-        <swiper-item>
-          <image src="../assets/imgs/index/swiper2.png" class= "swiper-item"/>
-        </swiper-item>
-        <swiper-item>
-          <image src="../assets/imgs/index/swiper3.png" class= "swiper-item"/>
-        </swiper-item>
+        </block>
     </swiper>
   </view>
   <view class= "res">

@@ -1,10 +1,16 @@
-//index.js
+var model = require('model.js');
+
 Page({
   data:{
-    // text:"这是一个页面"
+    sliders: [],
   },
   onLoad:function(options){
-    // 页面初始化 options为页面跳转所带来的参数
+    var me = this;
+    model.slide(function(data){
+      me.setData({
+        sliders: data.data,
+      })
+    });
   },
   onReady:function(){
     // 页面渲染完成
