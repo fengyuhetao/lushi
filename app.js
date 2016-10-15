@@ -8,5 +8,11 @@ App({
   },
   onHide: function () {
     console.log('App Hide')
+  },
+  use : function(path){
+    return require(path);
+  },
+  globalData: {
+    access_token: 'FAC14ogcN8KXFAMdVjOnOa4U2P7J3Gzl_1469188877'
   }
 })
