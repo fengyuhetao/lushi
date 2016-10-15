@@ -85,9 +85,58 @@
             </view>
         </view>
         <view class= "right">
-            <image class= "sm_hero" src= "../assets/imgs/create/sm_hero.png" />
+            <image class= "sm-hero" src= "../assets/imgs/create/sm_hero.png" />
             <image class= "modeback" src= "../assets/imgs/create/modeback.png" />
             <view class= "mode">狂野</view>
+            <view>
+                <view class= "single-card">
+                    <view class= "card-need">0</view>
+                    <image class= "pentagon" src= "../assets/imgs/create/pentagon.png" />
+                    <image class= "hero-logo" src= "../assets/imgs/create/hero_logo.png" />
+                    <view class= "card-number">2</view>
+                </view>
+                <view class= "single-card">
+                    <view class= "card-need">0</view>
+                    <image class= "pentagon" src= "../assets/imgs/create/pentagon.png" />
+                    <image class= "hero-logo" src= "../assets/imgs/create/hero_logo.png" />
+                    <view class= "card-number">2</view>
+                </view>
+                <view class= "single-card">
+                    <view class= "card-need">0</view>
+                    <image class= "pentagon" src= "../assets/imgs/create/pentagon.png" />
+                    <image class= "hero-logo" src= "../assets/imgs/create/hero_logo.png" />
+                    <view class= "card-number">2</view>
+                </view>
+                <view class= "single-card">
+                    <view class= "card-need">0</view>
+                    <image class= "pentagon" src= "../assets/imgs/create/pentagon.png" />
+                    <image class= "hero-logo" src= "../assets/imgs/create/hero_logo.png" />
+                    <view class= "card-number">2</view>
+                </view>
+                <view class= "single-card">
+                    <view class= "card-need">0</view>
+                    <image class= "pentagon" src= "../assets/imgs/create/pentagon.png" />
+                    <image class= "hero-logo" src= "../assets/imgs/create/hero_logo.png" />
+                    <view class= "card-number">2</view>
+                </view>
+            </view>
+            <view class= "footer">
+                <text class= "kazu">0/3</text>
+                <text class= "reset">重置</text>
+                <view class= "end">完成</view>
+            </view>
         <view>
+    </view>
+    <modal title="标题" confirm-text="confirm" cancel-text="cancel" hidden="{{modalHidden}}" bindconfirm="modalChange" bindcancel="modalChange">
+        这是对话框的内容。
+        </modal>
+
+        <modal class="modal" hidden="{{modalHidden2}}" no-cancel bindconfirm="modalChange2">
+        <view> 内容可以插入节点 </view>
+        </modal>
+
+        <view class="btn-area">
+        <button type="default" bindtap="modalTap">点击弹出modal</button>
+        <button type="default" bindtap="modalTap2">点击弹出modal2</button>
     </view>
 </view>

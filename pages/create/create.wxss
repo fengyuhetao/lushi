@@ -117,14 +117,14 @@ page {
     opacity: 0.5;
 }
 
-.all-hero {
+.content .left .all-hero {
     display: block;
     width: 500rpx;
     margin-top: 20rpx;
     background-color: #CACBFF;
 }
 
-.all-hero .single-hero {
+.content .left .all-hero .single-hero {
     width: 140rpx;
     display: block;
     margin-left: 13rpx;
@@ -133,12 +133,12 @@ page {
     float: left;
 }
 
-.all-hero .single-hero image {
+.content .left .all-hero .single-hero image {
     width: 140rpx;
     height: 194rpx;
 }
 
-.all-hero .single-hero text {
+.content .left .all-hero .single-hero text {
     font-size: 25rpx;
     display: block;
     text-align: center;
@@ -148,21 +148,102 @@ page {
     height: 40rpx;
 }
 
-.right .sm_hero {
+.content .right .sm-hero {
     display: block;
-    width: 255rpx;
+    width: 250rpx;
     height: 80rpx;
 }
 
-.right .modeback {
+.content .right .modeback {
     width: 120rpx;
     height: 70rpx;
     margin-left: 68rpx;
 }
 
-.right .mode {
+.content .right .mode {
     position: absolute;
     left: 88rpx;
     top: 88rpx;
     color: black;
 }
+
+.content .right .single-card {
+    position: relative;
+    margin-left: 10rpx;
+    margin-bottom: 20rpx;
+    height: 48rpx;
+    width: 240rpx;
+    color: white;
+}
+
+.content .right .single-card .pentagon {
+    width: 56rpx;
+    height: 48rpx;
+    z-index: 3;
+}
+
+.content .right .single-card .hero-logo {
+    position: relative;
+    width: 170rpx;
+    height: 48rpx;
+    margin-left: -15rpx;
+    z-index: 1;
+}
+
+.content .right .single-card .card-need {
+    position: absolute;
+    width: 29rpx;
+    text-align: center;
+    height: 48rpx;
+    line-height: 48rpx;
+    display: inline-block;
+    left: 14rpx;
+}
+
+.content .right .single-card .card-number {
+    position: absolute;
+    width: 20rpx;
+    text-align: center;
+    height: 48rpx;
+    line-height: 48rpx;
+    display: inline-block;
+    background-color: #7F4DD2;
+    left: 210rpx;
+}
+
+.content .right .footer {
+    position: relative;
+}
+
+.content .right .footer .kazu {
+    margin-top: 8rpx;
+    font-size: 30rpx;
+    color: #A4A4A4;
+    margin-left: 15rpx;
+}
+
+.content .right .footer .reset {
+    color: #382259;
+    display: inline-block;
+    border: 4rpx solid #362057;
+    font-size: 30rpx;
+    width: 100rpx;
+    height: 40rpx;
+    text-align: center;
+    line-height: 40rpx;
+    padding-top: 6rpx;
+    margin-left: 70rpx;
+}
+
+.content .right .footer .end {
+    color: white;
+    width: 220rpx;
+    text-align: center;
+    height: 60rpx;
+    line-height: 60rpx;
+    background-color: #7F4DD2;
+    margin: 20rpx auto;
+}
+
+
+

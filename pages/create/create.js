@@ -1,6 +1,8 @@
 Page({
   data:{
     // text:"这是一个页面"
+    modalHidden: true,
+    modalHidden2: true
   },
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
@@ -16,5 +18,25 @@ Page({
   },
   onUnload:function(){
     // 页面关闭
+  },
+  modalTap: function(e) {
+    this.setData({
+      modalHidden: false
+    })
+  },
+  modalChange: function(e) {
+    this.setData({
+      modalHidden: true
+    })
+  },
+  modalTap2: function(e) {
+    this.setData({
+      modalHidden2: false
+    })
+  },
+  modalChange2: function(e) {
+    this.setData({
+      modalHidden2: true
+    })
   }
 })
