@@ -1,0 +1,132 @@
+page {
+    background-color: #362057;
+    font-family: "等线";
+    color: white;
+}
+
+.tab {
+    width: 100%;
+    height: 220rpx;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30rpx;
+}
+
+.tab .personal {
+    margin-right: 100rpx;
+}
+
+/*67449E*/
+.mine, .hot {
+    margin-top: 20rpx;
+}
+.mine view, .hot view {
+    font-size: 15rpx;
+    margin-left: 20rpx;
+    display: block;
+    width: 16%;
+    height: 50rpx;
+    line-height: 50rpx;
+    float: left;
+    text-align: center;
+    border: 3rpx solid #67449E;
+    border-radius: 25rpx;
+    margin-top: 20rpx;
+}
+
+.mine .current, .hot .current {
+    background-color: #6A47A3;
+}
+
+.cardgroup {
+    width: 690rpx;
+    padding-left: 20rpx;
+    margin: 10rpx auto;
+    border-radius: 10rpx;
+    background-color: #4C3674;
+    overflow: hidden;
+}
+
+.cardgroup .single-cardgroup {
+    margin-top: 30rpx;
+    height: 120rpx;
+    width: 900rpx;
+    display: inline-block;
+}
+
+.cardgroup .single-cardgroup .part-display {
+    display: inline-block;
+    width: 690rpx;
+}
+
+.cardgroup .single-cardgroup .edit {
+    position: relative;
+    top: -33rpx;
+    display: inline-block;
+    height: 150rpx;
+    line-height: 150rpx;
+    width: 100rpx;
+    text-align: center;
+    background-color: #362057;
+    font-size: 30rpx;
+}
+
+.cardgroup .single-cardgroup .delete {
+    position: relative;
+    top: -33rpx;
+    display: inline-block;
+    height: 150rpx;
+    text-align: center;
+    line-height: 150rpx;
+    width: 100rpx;
+    font-size: 30rpx;
+    background-color: #291842;
+}
+
+.cardgroup .single-cardgroup .part-display .title {
+    font-size: 30rpx;
+}
+
+.cardgroup .single-cardgroup .part-display .parameters .single-parameter {
+    display: inline-block;
+    margin-right: 30rpx;
+    margin-top: 20rpx;
+}
+
+.cardgroup .single-cardgroup .part-display .parameters .single-parameter image{
+    display: inline-block;
+    width: 40rpx;
+    height: 40rpx;
+    margin-right: 10rpx;
+}
+
+.cardgroup .single-cardgroup .part-display .parameters .single-parameter view{
+    display: inline-block;
+    position: relative;
+    top: -5rpx;
+    font-size: 20rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+    margin-right: 10rpx;
+}
+
+.hr {
+    width: 680rpx;
+    margin: 0 auto;
+    border: 0.5rpx solid white;
+    opacity: 0.2;
+}
+
+.create {
+    display: block;
+    margin: 0 auto;
+    width: 150rpx;
+    height: 150rpx;
+}
+
+
+
+
+
+
+

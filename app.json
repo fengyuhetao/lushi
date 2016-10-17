@@ -1,13 +1,13 @@
 {
   "pages":[
+    "pages/kazu/kazu",    
+    "pages/index/index",    
     "pages/create/create",
-    "pages/index/index",
     "pages/hero/hero",
     "pages/zhubo/zhubo",
     "pages/zhubo_2/zhubo_2",
     "pages/cardTankuang/cardTankuang",
     "pages/video/video",
-    "pages/kazu/kazu",
     "pages/sets/sets",
     "pages/detail/detail"
   ],

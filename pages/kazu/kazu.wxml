@@ -1,3 +1,142 @@
 <view>
-卡组
+    <view class= "tab">
+        <text class= "personal" bindtap="changeKazu" id="personal" style= "{{personalStyle}}">我的卡组</text>
+        <text class= "hot" bindtap="changeKazu" id= "hot" style= "{{hotStyle}}">热门卡组</text>
+        <view class= "mine" style= "display: block;">
+        <view class = "current">全部</view>
+            <view bindtap="changeCurrent">德鲁伊</view>
+            <view bindtap="changeCurrent">猎人</view>
+            <view bindtap="changeCurrent">法师</view>
+            <view bindtap="changeCurrent">牧师</view>
+            <view bindtap="changeCurrent">潜行者</view>
+            <view bindtap="changeCurrent">萨满</view>
+            <view bindtap="changeCurrent">战士</view>
+            <view bindtap="changeCurrent">术士</view>
+            <view bindtap="changeCurrent">圣骑士</view>
+        </view>
+        <view class= "hot" style= "display: none;">
+            <view class = "current">全部</view>
+            <view bindtap="changeCurrent">德鲁伊</view>
+            <view bindtap="changeCurrent">猎人</view>
+            <view bindtap="changeCurrent">法师</view>
+            <view bindtap="changeCurrent">牧师</view>
+            <view bindtap="changeCurrent">潜行者</view>
+            <view bindtap="changeCurrent">萨满</view>
+            <view bindtap="changeCurrent">战士</view>
+            <view bindtap="changeCurrent">术士</view>
+            <view bindtap="changeCurrent">圣骑士</view>
+        </view>
+    </view>
+    <view style= "clear: both;"></view>
+    <view class= "cardgroup">
+        <view class= "single-cardgroup">
+            <view class= "part-display">
+                <view class= "title">我的卡组一</view>
+                <view class= "parameters">
+                    <view class= "single-parameter">
+                        <image class= "suicong" src= "../assets/imgs/kazu/suicong.png"/><view>1121</view>
+                    </view>
+                    <view class= "single-parameter">
+                        <image class= "suicong" src= "../assets/imgs/kazu/fashu.png"/><view>1123</view>
+                    </view>
+                    <view class= "single-parameter">
+                        <image class= "suicong" src= "../assets/imgs/kazu/zhuangbei.png"/><view>1123</view>
+                    </view>
+                    <view class= "single-parameter">
+                        <image class= "suicong" src= "../assets/imgs/kazu/zaojia.png"/><view>1123</view>
+                    </view>
+                </view>
+            </view>
+            <view class= "edit">
+                编辑
+            </view>
+            <view class= "delete">
+                删除
+            </view>
+        </view>
+        <view class= "hr"></view>
+        <view class= "single-cardgroup" style= "position: relative; left: -200rpx;">
+            <view class= "part-display">
+                <view class= "title">我的卡组一</view>
+                <view class= "parameters">
+                    <view class= "single-parameter">
+                        <image class= "suicong" src= "../assets/imgs/kazu/suicong.png"/><view>1121</view>
+                    </view>
+                    <view class= "single-parameter">
+                        <image class= "suicong" src= "../assets/imgs/kazu/fashu.png"/><view>1123</view>
+                    </view>
+                    <view class= "single-parameter">
+                        <image class= "suicong" src= "../assets/imgs/kazu/zhuangbei.png"/><view>1123</view>
+                    </view>
+                    <view class= "single-parameter">
+                        <image class= "suicong" src= "../assets/imgs/kazu/zaojia.png"/><view>1123</view>
+                    </view>
+                </view>
+            </view>
+            <view class= "edit">
+                编辑
+            </view>
+            <view class= "delete">
+                删除
+            </view>
+        </view>
+        <view class= "hr"></view>        
+        <view class= "single-cardgroup">
+            <view class= "part-display">
+                <view class= "title">我的卡组一</view>
+                <view class= "parameters">
+                    <view class= "single-parameter">
+                        <image class= "suicong" src= "../assets/imgs/kazu/suicong.png"/><view>1121</view>
+                    </view>
+                    <view class= "single-parameter">
+                        <image class= "suicong" src= "../assets/imgs/kazu/fashu.png"/><view>1123</view>
+                    </view>
+                    <view class= "single-parameter">
+                        <image class= "suicong" src= "../assets/imgs/kazu/zhuangbei.png"/><view>1123</view>
+                    </view>
+                    <view class= "single-parameter">
+                        <image class= "suicong" src= "../assets/imgs/kazu/zaojia.png"/><view>1123</view>
+                    </view>
+                </view>
+            </view>
+            <view class= "edit">
+                编辑
+            </view>
+            <view class= "delete">
+                删除
+            </view>
+        </view>
+        <view class= "hr"></view>        
+        <view class= "single-cardgroup">
+            <view class= "part-display">
+                <view class= "title">我的卡组一</view>
+                <view class= "parameters">
+                    <view class= "single-parameter">
+                        <image class= "suicong" src= "../assets/imgs/kazu/suicong.png"/><view>1121</view>
+                    </view>
+                    <view class= "single-parameter">
+                        <image class= "suicong" src= "../assets/imgs/kazu/fashu.png"/><view>1123</view>
+                    </view>
+                    <view class= "single-parameter">
+                        <image class= "suicong" src= "../assets/imgs/kazu/zhuangbei.png"/><view>1123</view>
+                    </view>
+                    <view class= "single-parameter">
+                        <image class= "suicong" src= "../assets/imgs/kazu/zaojia.png"/><view>1123</view>
+                    </view>
+                </view>
+            </view>
+            <view class= "edit">
+                编辑
+            </view>
+            <view class= "delete">
+                删除
+            </view>
+        </view>
+        <view class= "hr"></view>
+        <view class= "single-cardgroup">
+        </view>        
+        <view class= "hr"></view>
+        <image class= "create" src= "../assets/imgs/kazu/create.png" />
+    </view>
+
 </view>

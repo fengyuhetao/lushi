@@ -1,6 +1,6 @@
 page {
     background-color: #C0BFDE;
-    font-style: "微软黑体";
+    font-style: "等线";
 }
 
 .tab {

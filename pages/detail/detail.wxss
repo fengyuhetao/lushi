@@ -1,6 +1,6 @@
 page{
     background-color: #4C3674;
-    font-style: "微软黑体";
+    font-family: "等线";
 }
 
 .res-title {
