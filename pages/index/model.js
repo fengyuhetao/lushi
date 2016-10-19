@@ -13,7 +13,20 @@ function slide(callback) {
     })
 }
 
+function getResource(callback) {
+    server.request({
+        data: {
+            is_slide: 0,
+            page: 1,
+        },
+        route: '/info',
+        success: function(data) {
+            callback(data)
+        }
+    })
+}
 
 module.exports = {
     slide: slide,
+    getResource: getResource
 }

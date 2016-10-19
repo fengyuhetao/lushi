@@ -124,6 +124,17 @@ page {
     height: 150rpx;
 }
 
+.copy {
+    position: relative;
+    top: -33rpx;
+    display: inline-block;
+    height: 150rpx;
+    line-height: 150rpx;
+    width: 100rpx;
+    text-align: center;
+    background-color: #362057;
+    font-size: 30rpx;
+}
 
 
 

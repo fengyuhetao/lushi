@@ -28,7 +28,11 @@
         </view>
     </view>
     <view style= "clear: both;"></view>
-    <view class= "cardgroup">
+    <view>
+        <image src= "../assets/imgs/kazu/background.png" style= "display: block; z-index: 100; width: 400rpx; height: 400rpx; margin: 200rpx auto 20rpx; border-radius: 10rpx; background-color: #4C3674; overflow: hidden;"/>
+        <view style= "display: block; margin-left: 200rpx;">您的网络好像出问题了</view>
+    </view>
+    <view class= "cardgroup" style= "display: none">
         <view class= "single-cardgroup">
             <view class= "part-display">
                 <view class= "title">我的卡组一</view>
@@ -107,7 +111,7 @@
             </view>
         </view>
         <view class= "hr"></view>        
-        <view class= "single-cardgroup">
+        <view class= "single-cardgroup" style= "position: relative; left: -100rpx;">
             <view class= "part-display">
                 <view class= "title">我的卡组一</view>
                 <view class= "parameters">
@@ -125,11 +129,8 @@
                     </view>
                 </view>
             </view>
-            <view class= "edit">
-                编辑
-            </view>
-            <view class= "delete">
-                删除
+            <view class= "copy">
+                复制
             </view>
         </view>
         <view class= "hr"></view>

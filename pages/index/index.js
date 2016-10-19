@@ -3,6 +3,7 @@ var model = require('model.js');
 Page({
   data:{
     sliders: [],
+    resource: [],
   },
   onLoad:function(options){
     var me = this;
@@ -11,6 +12,28 @@ Page({
         sliders: data.data,
       })
     });
+    model.getResource(function(data) {
+      var resources = data.data;
+      console.log(resources);
+      
+      for(var i in resources)
+      {
+        //1472370681
+        var date = resources[i].created_at;
+        date = getApp().format(date);
+        resources[i].crated_at = date;
+        var title = resources[i].title;
+        title = title.substr(0, 15);
+        resources[i].title = title;
+        var subtitle = resources[i].subtitle;
+        subtitle = subtitle.substr(0, 20);
+        resources[i].subtitle = subtitle;
+      }
+      
+      me.setData({
+        resource: data.data,
+      })
+    })
   },
   onReady:function(){
     // 页面渲染完成

@@ -1,11 +1,11 @@
 {
   "pages":[
+    "pages/zhubo_2/zhubo_2",    
     "pages/kazu/kazu",    
     "pages/index/index",    
     "pages/create/create",
     "pages/hero/hero",
     "pages/zhubo/zhubo",
-    "pages/zhubo_2/zhubo_2",
     "pages/cardTankuang/cardTankuang",
     "pages/video/video",
     "pages/sets/sets",

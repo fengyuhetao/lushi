@@ -9,33 +9,17 @@
     </swiper>
   </view>
   <view class= "res">
-    <view class= "res-view" bindtap= "viewDetail">
-      <image class= "res-image" mode= "scaleToFill" src="../assets/imgs/index/image1.png" />
-      <text class= "res-title">{{"[新闻]好友争霸! 友谊赛！ 友谊赛...\n"}}</text>
-      <text class= "res-summary">{{"呆萌新的正确姿势：友谊赛做任务是...\n"}}</text>
-      <text class= "res-date">1天前</text>      
-    </view>
-    <view class= "hr"></view>
-    <view class= "res-view" bindtap= "viewDetail">
-      <image class= "res-image" src="../assets/imgs/index/image2.png" />
-      <text class= "res-title">{{"[新闻]好友争霸! 友谊赛！ 友谊赛...\n"}}</text>
-      <text class= "res-summary">{{"呆萌新的正确姿势：友谊赛做任务是...\n"}}</text>
-      <text class= "res-date">1天前</text>      
-    </view>
-    <view class= "hr"></view>
-    <view class= "res-view" bindtap= "viewDetail">
-      <image class= "res-image" src="../assets/imgs/index/image3.png" />
-      <text class= "res-title">{{"[新闻]好友争霸! 友谊赛！ 友谊赛...\n"}}</text>
-      <text class= "res-summary">{{"呆萌新的正确姿势：友谊赛做任务是...\n"}}</text>
-      <text class= "res-date">1天前</text>      
-    </view>
-    <view class= "hr"></view>
-    <view class= "res-view" bindtap= "viewDetail">
-      <image class= "res-image" src="../assets/imgs/index/image4.png" />
-      <text class= "res-title">{{"[新闻]好友争霸! 友谊赛！ 友谊赛...\n"}}</text>
-      <text class= "res-summary">{{"呆萌新的正确姿势：友谊赛做任务是..\n"}}</text>
-      <text class= "res-date">1天前</text>      
-    </view>
+    <block wx:for= "{{resource}}">
+      <view class= "res-view" id= "{{item.info_id}}" bindtap= "viewDetail">
+        <image class= "res-image" mode= "scaleToFill" src="../assets/imgs/index/image1.png" />
+        <view class= "res-title">{{item.title}}...</view>
+        <text class= "res-summary">{{item.subtitle}}...</text>
+        <text class= "res-date">{{item.crated_at}}</text>      
+      </view>
+      <block wx:if="{{index != resource.length - 1}}">
+        <view class= "hr"></view>
+      </block>
+    </block>
   </view>
 
   <view class="body-view">

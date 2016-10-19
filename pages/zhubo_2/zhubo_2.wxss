@@ -42,23 +42,24 @@ page {
     position: relative;
     background-color: white;
     width: 200rpx;
-    height: 300rpx;
     margin: 0rpx auto;
     z-index: 10;
     border-radius: 10rpx;
-    opacity: 0.9;
+    opacity: 0.85;
     padding-top: 12rpx;
+    padding-bottom: 12rpx;
 }
 
 .head .rectangle .type{
     color: black;
+    font-size: 30rpx;
     line-height: 50rpx;
     width: 140rpx;
     height: 50rpx;
     margin: 13rpx auto 13rpx;
     margin-bottom: 12rpx;
     border: 2rpx solid #999999;
-    border-radius: 5rpx;
+    border-radius: 10rpx;
 }
 
 .content {

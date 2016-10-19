@@ -5,39 +5,26 @@
         <view style= "display: {{is_show}};">
             <view class= "triangle"></view>
             <view class= "rectangle">
-                <view bindtap="changeType" class= "type" style= "background-color: #898BDB; color: white;">全部</view>
-                <view bindtap="changeType" class= "type">全民</view>
-                <view bindtap="changeType" class= "type">熊猫</view>
-                <view bindtap="changeType" class= "type">斗鱼</view>
+                <block wx:for="{{platform}}">
+                    <block wx:if="{{index == current}}">
+                        <view bindtap="changeType" id= "{{platform_id[index]}}" class= "type" style= "{{current_type}}">{{item}}</view>
+                    </block>
+                    <block wx:if="{{index != current}}">
+                        <view bindtap="changeType" id= "{{platform_id[index]}}" class= "type" style= "{{not_current_type}}">{{item}}</view>
+                    </block>                        
+                </block>
             </view>
         </view>
     </view>
     <view class= "content">
-        <view class= "single-zhubo">
-            <view class= "shuiyin">全民</view>
-            <image src= "../assets/imgs/zhubo_2/zhubo.png" />
-            <text>秋日</text>
-        </view>
-        <view class= "single-zhubo">
-            <view class= "shuiyin">全民</view>        
-            <image src= "../assets/imgs/zhubo_2/zhubo.png" />
-            <text>秋日</text>
-        </view>
-        <view class= "single-zhubo">
-            <image src= "../assets/imgs/zhubo_2/zhubo.png" />
-            <text>秋日</text>
-        </view>
-        <view class= "single-zhubo">
-            <image src= "../assets/imgs/zhubo_2/zhubo.png" />
-            <text>秋日</text>
-        </view>
-        <view class= "single-zhubo">
-            <image src= "../assets/imgs/zhubo_2/zhubo.png" />
-            <text>秋日</text>
-        </view>
-        <view class= "single-zhubo">
-            <image src= "../assets/imgs/zhubo_2/zhubo.png" />
-            <text>秋日</text>
-        </view>
+        <block wx:for="{{anchorsData}}">
+            <view class= "single-zhubo" bindtap="viewDetail" id= "{{item.user_id}}">
+                <block wx:if="{{item.platform == 2}}">
+                    <view class= "shuiyin">全民</view>
+                </block>
+                <image src= "{{item.poster_url}}" />
+                <text>{{item.nickname}}</text>
+            </view>
+        </block>
     </view>
 </view>

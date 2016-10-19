@@ -1,3 +1,5 @@
+var model = require("../zhubo_2/model.js")
+
 Page({
   data:{
     // text:"这是一个页面"

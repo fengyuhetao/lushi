@@ -20,7 +20,7 @@ page {
 }
 .res-image {
   width: 200rpx;
-  height: 200rpx;
+  height: 160rpx;
   float: left;
   margin-right: 20rpx;
   margin-left: 20rpx;

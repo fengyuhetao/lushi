@@ -22,28 +22,28 @@
         <view class="res">
             <view class= "res-view" bindtap= "viewDetail">
                 <image class= "res-image" mode= "scaleToFill" src="../assets/imgs/index/image1.png" />
-                <text class= "res-title">{{"[新闻]好友争霸! 友谊赛！ 友谊赛...\n"}}</text>
-                <text class= "res-summary">{{"呆萌新的正确姿势：友谊赛做任务是...\n"}}</text>
+                <text class= "res-title">{{"[新闻]好友争霸! 友谊赛！ 友谊赛..."}}</text>
+                <text class= "res-summary">{{"呆萌新的正确姿势：友谊赛做任务是..."}}</text>
                 <text class= "res-date">1天前</text>      
             </view>
             <view class= "hr"></view>
             <view class= "res-view" bindtap= "viewDetail">
                 <image class= "res-image" src="../assets/imgs/index/image2.png" />
-                <text class= "res-title">{{"[新闻]好友争霸! 友谊赛！ 友谊赛...\n"}}</text>
-                <text class= "res-summary">{{"呆萌新的正确姿势：友谊赛做任务是...\n"}}</text>
+                <text class= "res-title">{{"[新闻]好友争霸! 友谊赛！ 友谊赛..."}}</text>
+                <text class= "res-summary">{{"呆萌新的正确姿势：友谊赛做任务是..."}}</text>
                 <text class= "res-date">1天前</text>      
             </view>
             <view class= "res-view" bindtap= "viewDetail">
                 <image class= "res-image" mode= "scaleToFill" src="../assets/imgs/index/image1.png" />
-                <text class= "res-title">{{"[新闻]好友争霸! 友谊赛！ 友谊赛...\n"}}</text>
-                <text class= "res-summary">{{"呆萌新的正确姿势：友谊赛做任务是...\n"}}</text>
+                <text class= "res-title">{{"[新闻]好友争霸! 友谊赛！ 友谊赛..."}}</text>
+                <text class= "res-summary">{{"呆萌新的正确姿势：友谊赛做任务是..."}}</text>
                 <text class= "res-date">1天前</text>      
             </view>
             <view class= "hr"></view>
             <view class= "res-view" bindtap= "viewDetail">
                 <image class= "res-image" src="../assets/imgs/index/image2.png" />
-                <text class= "res-title">{{"[新闻]好友争霸! 友谊赛！ 友谊赛...\n"}}</text>
-                <text class= "res-summary">{{"呆萌新的正确姿势：友谊赛做任务是...\n"}}</text>
+                <text class= "res-title">{{"[新闻]好友争霸! 友谊赛！ 友谊赛..."}}</text>
+                <text class= "res-summary">{{"呆萌新的正确姿势：友谊赛做任务是..."}}</text>
                 <text class= "res-date">1天前</text>      
             </view>
         </view>
@@ -52,28 +52,28 @@
         <view class="res">
             <view class= "res-view" bindtap= "viewDetail">
                 <image class= "res-image" mode= "scaleToFill" src="../assets/imgs/index/image1.png" />
-                <text class= "res-title">{{"[新闻]好友争霸! 友谊赛！ 友谊赛...\n"}}</text>
-                <text class= "res-summary">{{"呆萌新的正确姿势：友谊赛做任务是...\n"}}</text>
+                <text class= "res-title">{{"[新闻]好友争霸! 友谊赛！ 友谊赛..."}}</text>
+                <text class= "res-summary">{{"呆萌新的正确姿势：友谊赛做任务是..."}}</text>
                 <text class= "res-date">1天前</text>      
             </view>
             <view class= "hr"></view>
             <view class= "res-view" bindtap= "viewDetail">
                 <image class= "res-image" src="../assets/imgs/index/image2.png" />
-                <text class= "res-title">{{"[新闻]好友争霸! 友谊赛！ 友谊赛...\n"}}</text>
-                <text class= "res-summary">{{"呆萌新的正确姿势：友谊赛做任务是...\n"}}</text>
+                <text class= "res-title">{{"[新闻]好友争霸! 友谊赛！ 友谊赛..."}}</text>
+                <text class= "res-summary">{{"呆萌新的正确姿势：友谊赛做任务是..."}}</text>
                 <text class= "res-date">1天前</text>      
             </view>
             <view class= "res-view" bindtap= "viewDetail">
                 <image class= "res-image" mode= "scaleToFill" src="../assets/imgs/index/image1.png" />
-                <text class= "res-title">{{"[新闻]好友争霸! 友谊赛！ 友谊赛...\n"}}</text>
-                <text class= "res-summary">{{"呆萌新的正确姿势：友谊赛做任务是...\n"}}</text>
+                <text class= "res-title">{{"[新闻]好友争霸! 友谊赛！ 友谊赛..."}}</text>
+                <text class= "res-summary">{{"呆萌新的正确姿势：友谊赛做任务是..."}}</text>
                 <text class= "res-date">1天前</text>      
             </view>
             <view class= "hr"></view>
             <view class= "res-view" bindtap= "viewDetail">
                 <image class= "res-image" src="../assets/imgs/index/image2.png" />
-                <text class= "res-title">{{"[新闻]好友争霸! 友谊赛！ 友谊赛...\n"}}</text>
-                <text class= "res-summary">{{"呆萌新的正确姿势：友谊赛做任务是...\n"}}</text>
+                <text class= "res-title">{{"[新闻]好友争霸! 友谊赛！ 友谊赛..."}}</text>
+                <text class= "res-summary">{{"呆萌新的正确姿势：友谊赛做任务是..."}}</text>
                 <text class= "res-date">1天前</text>      
             </view>
         </view>
@@ -82,28 +82,28 @@
         <view class="res">
             <view class= "res-view" bindtap= "viewDetail">
                 <image class= "res-image" mode= "scaleToFill" src="../assets/imgs/index/image1.png" />
-                <text class= "res-title">{{"[新闻]好友争霸! 友谊赛！ 友谊赛...\n"}}</text>
-                <text class= "res-summary">{{"呆萌新的正确姿势：友谊赛做任务是...\n"}}</text>
+                <text class= "res-title">{{"[新闻]好友争霸! 友谊赛！ 友谊赛..."}}</text>
+                <text class= "res-summary">{{"呆萌新的正确姿势：友谊赛做任务是..."}}</text>
                 <text class= "res-date">1天前</text>      
             </view>
             <view class= "hr"></view>
                 <view class= "res-view" bindtap= "viewDetail">
                 <image class= "res-image" src="../assets/imgs/index/image2.png" />
-                <text class= "res-title">{{"[新闻]好友争霸! 友谊赛！ 友谊赛...\n"}}</text>
-                <text class= "res-summary">{{"呆萌新的正确姿势：友谊赛做任务是...\n"}}</text>
+                <text class= "res-title">{{"[新闻]好友争霸! 友谊赛！ 友谊赛..."}}</text>
+                <text class= "res-summary">{{"呆萌新的正确姿势：友谊赛做任务是..."}}</text>
                 <text class= "res-date">1天前</text>      
             </view>
             <view class= "res-view" bindtap= "viewDetail">
                 <image class= "res-image" mode= "scaleToFill" src="../assets/imgs/index/image1.png" />
-                <text class= "res-title">{{"[新闻]好友争霸! 友谊赛！ 友谊赛...\n"}}</text>
-                <text class= "res-summary">{{"呆萌新的正确姿势：友谊赛做任务是...\n"}}</text>
+                <text class= "res-title">{{"[新闻]好友争霸! 友谊赛！ 友谊赛..."}}</text>
+                <text class= "res-summary">{{"呆萌新的正确姿势：友谊赛做任务是..."}}</text>
                 <text class= "res-date">1天前</text>      
             </view>
             <view class= "hr"></view>
             <view class= "res-view" bindtap= "viewDetail">
                 <image class= "res-image" src="../assets/imgs/index/image2.png" />
-                <text class= "res-title">{{"[新闻]好友争霸! 友谊赛！ 友谊赛...\n"}}</text>
-                <text class= "res-summary">{{"呆萌新的正确姿势：友谊赛做任务是...\n"}}</text>
+                <text class= "res-title">{{"[新闻]好友争霸! 友谊赛！ 友谊赛..."}}</text>
+                <text class= "res-summary">{{"呆萌新的正确姿势：友谊赛做任务是..."}}</text>
                 <text class= "res-date">1天前</text>      
             </view>
         </view>
