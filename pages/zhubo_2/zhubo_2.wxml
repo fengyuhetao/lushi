@@ -18,7 +18,7 @@
     </view>
     <view class= "content">
         <block wx:for="{{anchorsData}}">
-            <view class= "single-zhubo" bindtap="viewDetail" id= "{{item.user_id}}">
+            <view class= "single-zhubo" bindtap="viewDetail" id= "{{item.user_id + 4}}">
                 <block wx:if="{{item.platform == 2}}">
                     <view class= "shuiyin">全民</view>
                 </block>

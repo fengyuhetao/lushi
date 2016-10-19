@@ -1,11 +1,19 @@
 <view>
     <view>
         <view>
-            <image class= "logo" src= "../assets/imgs/zhubo/logo.png"/>
-            <image class= "head" src= "../assets/imgs/zhubo/head.png"/>
+            <image class= "logo" src= "{{anchorDetail.poster_url}}"/>
+            <image class= "head" src= "{{anchorDetail.avatar_url}}"/>
             <view class="name-res">
-                <text class= "nickname">秋日</text>
-                <text class= "person-res">来自斗鱼</text>
+                <text class= "nickname">{{anchorDetail.nickname}}</text>
+                <block wx:if="{{anchorDetail.platform == 1}}">
+                    <text class= "person-res">来自熊猫</text>
+                </block>
+                <block wx:if="{{anchorDetail.platform == 2}}">
+                    <text class= "person-res">来自全名</text>
+                </block>
+                <block wx:if="{{anchorDetail.platform == 3}}">
+                    <text class= "person-res">来自斗鱼</text>
+                </block>
             </view>
             <view class="banyuan"></view>
         <view>
@@ -20,92 +28,47 @@
     </view>
     <view style= "display: {{kazu_show}};">
         <view class="res">
-            <view class= "res-view" bindtap= "viewDetail">
-                <image class= "res-image" mode= "scaleToFill" src="../assets/imgs/index/image1.png" />
-                <text class= "res-title">{{"[新闻]好友争霸! 友谊赛！ 友谊赛..."}}</text>
-                <text class= "res-summary">{{"呆萌新的正确姿势：友谊赛做任务是..."}}</text>
-                <text class= "res-date">1天前</text>      
+        <block wx:for="{{kazu}}">
+            <view class= "res-view" id= "{{item.info_id}}" bindtap= "viewDetail">
+                <image class= "res-image" mode= "scaleToFill" src="{{item.thumbnail_url}}" />
+                <text class= "res-title">{{item.title}}</text>
+                <text class= "res-summary">{{item.subtitle}}</text>
+                <text class= "res-date">{{item.created_at}}</text>      
             </view>
-            <view class= "hr"></view>
-            <view class= "res-view" bindtap= "viewDetail">
-                <image class= "res-image" src="../assets/imgs/index/image2.png" />
-                <text class= "res-title">{{"[新闻]好友争霸! 友谊赛！ 友谊赛..."}}</text>
-                <text class= "res-summary">{{"呆萌新的正确姿势：友谊赛做任务是..."}}</text>
-                <text class= "res-date">1天前</text>      
-            </view>
-            <view class= "res-view" bindtap= "viewDetail">
-                <image class= "res-image" mode= "scaleToFill" src="../assets/imgs/index/image1.png" />
-                <text class= "res-title">{{"[新闻]好友争霸! 友谊赛！ 友谊赛..."}}</text>
-                <text class= "res-summary">{{"呆萌新的正确姿势：友谊赛做任务是..."}}</text>
-                <text class= "res-date">1天前</text>      
-            </view>
-            <view class= "hr"></view>
-            <view class= "res-view" bindtap= "viewDetail">
-                <image class= "res-image" src="../assets/imgs/index/image2.png" />
-                <text class= "res-title">{{"[新闻]好友争霸! 友谊赛！ 友谊赛..."}}</text>
-                <text class= "res-summary">{{"呆萌新的正确姿势：友谊赛做任务是..."}}</text>
-                <text class= "res-date">1天前</text>      
-            </view>
+            <block wx:if="{{index != kazu.length - 1}}">
+                <view class= "hr"></view>
+            </block>            
+        </block>
         </view>
     </view>
     <view style= "display: {{shiping_show}};">
         <view class="res">
-            <view class= "res-view" bindtap= "viewDetail">
-                <image class= "res-image" mode= "scaleToFill" src="../assets/imgs/index/image1.png" />
-                <text class= "res-title">{{"[新闻]好友争霸! 友谊赛！ 友谊赛..."}}</text>
-                <text class= "res-summary">{{"呆萌新的正确姿势：友谊赛做任务是..."}}</text>
-                <text class= "res-date">1天前</text>      
+         <block wx:for="{{video}}">
+            <view class= "res-view" id= "{{item.info_id}}" bindtap= "viewDetail">
+                <image class= "res-image" mode= "scaleToFill" src="{{item.thumbnail_url}}" />
+                <text class= "res-title">{{item.title}}...</text>
+                <text class= "res-summary">{{item.subtitle}}...</text>
+                <text class= "res-date">{{item.created_at}}</text>      
             </view>
-            <view class= "hr"></view>
-            <view class= "res-view" bindtap= "viewDetail">
-                <image class= "res-image" src="../assets/imgs/index/image2.png" />
-                <text class= "res-title">{{"[新闻]好友争霸! 友谊赛！ 友谊赛..."}}</text>
-                <text class= "res-summary">{{"呆萌新的正确姿势：友谊赛做任务是..."}}</text>
-                <text class= "res-date">1天前</text>      
-            </view>
-            <view class= "res-view" bindtap= "viewDetail">
-                <image class= "res-image" mode= "scaleToFill" src="../assets/imgs/index/image1.png" />
-                <text class= "res-title">{{"[新闻]好友争霸! 友谊赛！ 友谊赛..."}}</text>
-                <text class= "res-summary">{{"呆萌新的正确姿势：友谊赛做任务是..."}}</text>
-                <text class= "res-date">1天前</text>      
-            </view>
-            <view class= "hr"></view>
-            <view class= "res-view" bindtap= "viewDetail">
-                <image class= "res-image" src="../assets/imgs/index/image2.png" />
-                <text class= "res-title">{{"[新闻]好友争霸! 友谊赛！ 友谊赛..."}}</text>
-                <text class= "res-summary">{{"呆萌新的正确姿势：友谊赛做任务是..."}}</text>
-                <text class= "res-date">1天前</text>      
-            </view>
+            <block wx:if="{{index != video.length - 1}}">
+                <view class= "hr"></view>
+            </block>            
+        </block>
         </view>
     </view>
     <view style = "display: {{zixun_show}};">
         <view class="res">
-            <view class= "res-view" bindtap= "viewDetail">
-                <image class= "res-image" mode= "scaleToFill" src="../assets/imgs/index/image1.png" />
-                <text class= "res-title">{{"[新闻]好友争霸! 友谊赛！ 友谊赛..."}}</text>
-                <text class= "res-summary">{{"呆萌新的正确姿势：友谊赛做任务是..."}}</text>
-                <text class= "res-date">1天前</text>      
+        <block wx:for="{{resources}}">
+            <view class= "res-view" id= "{{item.info_id}}" bindtap= "viewDetail">
+                <image class= "res-image" mode= "scaleToFill" src="{{item.thumbnail_url}}" />
+                <text class= "res-title">{{item.title}}...</text>
+                <text class= "res-summary">{{item.subtitle}}...</text>
+                <text class= "res-date">{{item.created_at}}</text>      
             </view>
-            <view class= "hr"></view>
-                <view class= "res-view" bindtap= "viewDetail">
-                <image class= "res-image" src="../assets/imgs/index/image2.png" />
-                <text class= "res-title">{{"[新闻]好友争霸! 友谊赛！ 友谊赛..."}}</text>
-                <text class= "res-summary">{{"呆萌新的正确姿势：友谊赛做任务是..."}}</text>
-                <text class= "res-date">1天前</text>      
-            </view>
-            <view class= "res-view" bindtap= "viewDetail">
-                <image class= "res-image" mode= "scaleToFill" src="../assets/imgs/index/image1.png" />
-                <text class= "res-title">{{"[新闻]好友争霸! 友谊赛！ 友谊赛..."}}</text>
-                <text class= "res-summary">{{"呆萌新的正确姿势：友谊赛做任务是..."}}</text>
-                <text class= "res-date">1天前</text>      
-            </view>
-            <view class= "hr"></view>
-            <view class= "res-view" bindtap= "viewDetail">
-                <image class= "res-image" src="../assets/imgs/index/image2.png" />
-                <text class= "res-title">{{"[新闻]好友争霸! 友谊赛！ 友谊赛..."}}</text>
-                <text class= "res-summary">{{"呆萌新的正确姿势：友谊赛做任务是..."}}</text>
-                <text class= "res-date">1天前</text>      
-            </view>
+            <block wx:if="{{index != resources.length - 1}}">
+                <view class= "hr"></view>
+            </block>            
+        </block>
         </view>
     </view>
 </view>

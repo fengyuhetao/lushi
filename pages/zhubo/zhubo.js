@@ -1,4 +1,4 @@
-var model = require("../../lib/model.js")
+var model = getApp().use("lib/model.js")
 
 Page({
   data:{
@@ -9,78 +9,40 @@ Page({
     "underline": "85",                        //85, 330, 580
     "resource": [],
     "video": [],
-    "kazu": []
+    "kazu": [],
+    "anchorDetail": {}
   },
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
-    console.log(options);
-    model.getResource(options.user_id, 0, "", function(data) {
-      var resources = data.data;
-      console.log(resources);
-      for(var i in resources)
-      {
-        //格式化日期
-        var date = resources[i].created_at;
-        date = getApp().format(date);
-        resources[i].crated_at = date;
-        // 截取字符串，确保title只在一行内显示
-        var title = resources[i].title;
-        title = title.substr(0, 15);
-        resources[i].title = title;
-        //截取字符串，确保subtitle只在一行内显示
-        var subtitle = resources[i].subtitle;
-        subtitle = subtitle.substr(0, 16);
-        resources[i].subtitle = subtitle;
-      }
-      
+    var me = this
+
+    // 获取卡组信息
+    model.getAnchorKazu(options.user_id, function(data) {
+      me.setData({
+        "kazu": data.data
+      })
+    })
+    // 获取资讯（不是视频）
+    model.getAnchorData(options.user_id, 0, function(data) {
+      var resources = data.data
+      resources = me.dealData(resources)
       me.setData({
         resource: resources,
       })
     })
-    model.getResource(options.user_id, 1, "", function(data) {
-      var resources = data.data;
-      console.log(resources);
-      for(var i in resources)
-      {
-        //格式化日期
-        var date = resources[i].created_at;
-        date = getApp().format(date);
-        resources[i].crated_at = date;
-        // 截取字符串，确保title只在一行内显示
-        var title = resources[i].title;
-        title = title.substr(0, 15);
-        resources[i].title = title;
-        //截取字符串，确保subtitle只在一行内显示
-        var subtitle = resources[i].subtitle;
-        subtitle = subtitle.substr(0, 16);
-        resources[i].subtitle = subtitle;
-      }
-      
+    // 获取资讯（视频）
+    model.getAnchorData(options.user_id, 1, function(data) {
+      var resources = data.data
+      resources = me.dealData(resources)
       me.setData({
         video: resources,
       })
     })
-    model.getResource(options.user_id, 0, "卡组", function(data) {
-      var resources = data.data;
-      console.log(resources);
-      for(var i in resources)
-      {
-        //格式化日期
-        var date = resources[i].created_at;
-        date = getApp().format(date);
-        resources[i].crated_at = date;
-        // 截取字符串，确保title只在一行内显示
-        var title = resources[i].title;
-        title = title.substr(0, 15);
-        resources[i].title = title;
-        //截取字符串，确保subtitle只在一行内显示
-        var subtitle = resources[i].subtitle;
-        subtitle = subtitle.substr(0, 16);
-        resources[i].subtitle = subtitle;
-      }
-      
+    // 获取主播信息
+    model.getAnchor(options.user_id, function(data) {
+      console.log(data.data)
       me.setData({
-        kazu: resources,
+        "anchorDetail": data.data
       })
     })
   },
@@ -109,7 +71,25 @@ Page({
   viewDetail: function(e) {
     console.log(e);
     wx.navigateTo({
-      url: '../detail/detail?id=' + e.currentTarget.id
+      url: '../detail/detail?info_id=' + e.currentTarget.id
     })
+  },
+  dealData: function(resources) {
+      for(var i in resources)
+      {
+        //格式化日期
+        var date = resources[i].created_at;
+        date = getApp().format(date);
+        resources[i].created_at = date;
+        // 截取字符串，确保title只在一行内显示
+        var title = resources[i].title;
+        title = title.substr(0, 15);
+        resources[i].title = title;
+        //截取字符串，确保subtitle只在一行内显示
+        var subtitle = resources[i].subtitle;
+        subtitle = subtitle.substr(0, 16);
+        resources[i].subtitle = subtitle;
+      }
+      return resources
   }
 })

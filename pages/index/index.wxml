@@ -14,7 +14,7 @@
         <image class= "res-image" mode= "scaleToFill" src="{{item.thumbnail_url}}" />
         <view class= "res-title">{{item.title}}...</view>
         <text class= "res-summary">{{item.subtitle}}...</text>
-        <text class= "res-date">{{item.crated_at}}</text>      
+        <text class= "res-date">{{item.created_at}}</text>      
       </view>
       <block wx:if="{{index != resource.length - 1}}">
         <view class= "hr"></view>

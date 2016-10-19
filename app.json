@@ -1,7 +1,7 @@
 {
   "pages":[
     "pages/zhubo_2/zhubo_2",    
-    "pages/kazu/kazu",    
+    "pages/cardSet/cardSet",    
     "pages/index/index",    
     "pages/create/create",
     "pages/hero/hero",
@@ -37,7 +37,7 @@
       "iconPath": "pages/assets/imgs/index/icon3.png",
       "selectedIconPath": "pages/assets/imgs/index/icon3_light.png"      
     }, {
-      "pagePath": "pages/kazu/kazu",
+      "pagePath": "pages/cardSet/cardSet",
       "text": "卡组",
       "iconPath": "pages/assets/imgs/index/icon4.png",
       "selectedIconPath": "pages/assets/imgs/index/icon4_light.png"

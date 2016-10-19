@@ -1,0 +1,107 @@
+<view>
+    <view class= "tab">
+        <text class= "personal" bindtap="changeCardSet" id="personal" style= "{{personalStyle}}">我的卡组</text>
+        <text class= "hot" bindtap="changeCardSet" id= "hot" style= "{{hotStyle}}">热门卡组</text>
+        <view class= "mine" style= "display: block;">
+            <block wx:for="{{roles}}">
+                <block wx:if="{{index == current}}">
+                    <view id= "{{index}}" bindtap= "changeCurrent" class = "current">{{item}}</view>
+                </block>
+                <block wx:if="{{index != current}}">
+                    <view id= "{{index}}" bindtap= "changeCurrent">{{item}}</view>
+                </block>
+            </block>
+        </view>
+    </view>
+    <view style= "clear: both;"></view>
+    <view style="display:none">
+        <image src= "../assets/imgs/kazu/background.png" style= "display: block; z-index: 100; width: 400rpx; height: 400rpx; margin: 200rpx auto 20rpx; border-radius: 10rpx; background-color: #4C3674; overflow: hidden;"/>
+        <view style= "display: block; margin-left: 200rpx;">您的网络好像出问题了</view>
+    </view>
+    <view class= "cardset" style= "display: block">
+        <block wx:for="{{cardSet}}">
+            <view class= "single-cardset" id= "{{cardset_id + 20}}" bindtap= "viewCardSetDetail">
+                <view class= "part-display">
+                    <view class= "title">{{item.cardset_name}}</view>
+                    <view class= "parameters">
+                        <view class= "single-parameter">
+                            <image class= "suicong" src= "../assets/imgs/kazu/suicong.png"/><view>{{item.minion_count}}</view>
+                        </view>
+                        <view class= "single-parameter">
+                            <image class= "suicong" src= "../assets/imgs/kazu/fashu.png"/><view>{{item.weapon_count}}</view>
+                        </view>
+                        <view class= "single-parameter">
+                            <image class= "suicong" src= "../assets/imgs/kazu/zhuangbei.png"/><view>{{item.spell_count}}</view>
+                        </view>
+                        <view class= "single-parameter">
+                            <image class= "suicong" src= "../assets/imgs/kazu/zaojia.png"/><view>{{item.consume}}</view>
+                        </view>
+                    </view>
+                </view>
+                <view class= "edit">
+                    编辑
+                </view>
+                <view class= "delete">
+                    删除
+                </view>
+            </view>
+            <block wx:if="{{index != cardSet.length}}">
+                <view class= "hr"></view>
+            </block>
+        </block>
+        <view class= "single-cardset" style= "position: relative; left: -200rpx;">
+            <view class= "part-display">
+                <view class= "title">我的卡组一</view>
+                <view class= "parameters">
+                    <view class= "single-parameter">
+                        <image class= "suicong" src= "../assets/imgs/kazu/suicong.png"/><view>1121</view>
+                    </view>
+                    <view class= "single-parameter">
+                        <image class= "suicong" src= "../assets/imgs/kazu/fashu.png"/><view>1123</view>
+                    </view>
+                    <view class= "single-parameter">
+                        <image class= "suicong" src= "../assets/imgs/kazu/zhuangbei.png"/><view>1123</view>
+                    </view>
+                    <view class= "single-parameter">
+                        <image class= "suicong" src= "../assets/imgs/kazu/zaojia.png"/><view>1123</view>
+                    </view>
+                </view>
+            </view>
+            <view class= "edit">
+                编辑
+            </view>
+            <view class= "delete">
+                删除
+            </view>
+        </view>
+        <view class= "hr"></view>        
+        <view class= "single-cardset" style= "position: relative; left: -100rpx;">
+            <view class= "part-display">
+                <view class= "title">我的卡组一</view>
+                <view class= "parameters">
+                    <view class= "single-parameter">
+                        <image class= "suicong" src= "../assets/imgs/kazu/suicong.png"/><view>1121</view>
+                    </view>
+                    <view class= "single-parameter">
+                        <image class= "suicong" src= "../assets/imgs/kazu/fashu.png"/><view>1123</view>
+                    </view>
+                    <view class= "single-parameter">
+                        <image class= "suicong" src= "../assets/imgs/kazu/zhuangbei.png"/><view>1123</view>
+                    </view>
+                    <view class= "single-parameter">
+                        <image class= "suicong" src= "../assets/imgs/kazu/zaojia.png"/><view>1123</view>
+                    </view>
+                </view>
+            </view>
+            <view class= "copy">
+                复制
+            </view>
+        </view>
+        <view class= "hr"></view>
+        <view class= "single-cardset">
+        </view>        
+        <view class= "hr"></view>
+        <image class= "create" src= "../assets/imgs/kazu/create.png" />
+    </view>
+
+</view>

@@ -1,4 +1,4 @@
-var anchors = getApp().use('lib/model.js');
+var anchors = getApp().use('lib/model.js')
 
 Page({
   data:{
@@ -32,18 +32,19 @@ Page({
   dropContent: function() {
     var style = this.data.style;
     if(style == "drop-up") {
-      this.setData({"style": "drop-down", "is_show": "block"});
+      this.setData({"style": "drop-down", "is_show": "block"})
     } else {
-      this.setData({"style": "drop-up", "is_show": "none"});
+      this.setData({"style": "drop-up", "is_show": "none"})
     }
   },
   changeType: function(e) { 
-    this.setData({"current": e.target.id, "style": "drop-up", "is_show": "none"});
+    this.setData({"current": e.target.id, "style": "drop-up", "is_show": "none"})
     this.getAnchorData(e.target.id);
   },
   viewDetail: function(e) {
+    var id = e.currentTarget.id - 4
     wx.navigateTo({
-      url: '../zhubo/zhubo?user_id=' + e.currentTarget.id
+      url: '../zhubo/zhubo?user_id=' + id
     })
   },
   getAnchors: function(platform = 0) {
@@ -51,7 +52,7 @@ Page({
     {
       platform = "";
     }
-    var me = this;
+    var me = this
     anchors.getAnchors(platform, function(data){
       me.setData({
         anchorsData: data.data,

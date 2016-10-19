@@ -12,51 +12,52 @@ page {
     width: 105rpx;
     height: 105rpx;
     border-radius: 50%;
-    border: 5rpx solid white;
+    border: 3rpx solid white;
     position: absolute;
     z-index: 10;
-    top: 183rpx;
+    top: 184rpx;
     left: 22rpx;
 }
 .name-res {
     position: absolute;
     display: block;
-    width: 150rpx;
-    height: 108rpx;
+    width: 180rpx;
+    height: 111rpx;
     z-index: 9;
     top: 185rpx;
     left: 92rpx;
     background-color: black;
-    opacity: 0.11;
+    opacity: 0.8;
 }
 
 .banyuan {
     position: absolute;
     display: block;
-    width: 108rpx;
-    height: 108rpx;
-    border-radius: 50%;
+    width: 56rpx;
+    height: 112rpx;
+    border-top-right-radius: 56rpx;
+    border-bottom-right-radius: 56rpx;
     z-index: 8;
     top: 185rpx;
-    left: 188rpx;
+    left: 265rpx;
     background-color: black;
-    opacity: 0.1;
+    opacity: 0.8;
 }
 
 .nickname {
     display: block;
     margin-top: 10px;
     margin-left: 60rpx;
-    font-size: 30rpx;
+    font-size: 20rpx;
     color: white;
 }
 
 .person-res {
     display: block;
-    margin-left: 45rpx;
-    margin-top: 10rpx;
+    margin-left: 58rpx;
+    margin-top: 15rpx;
     color: white;
-    font-size: 2px;
+    font-size: 15rpx;
 }
 
 .tab text {

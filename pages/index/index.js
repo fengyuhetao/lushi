@@ -1,4 +1,4 @@
-var model = getApp().use('/lib/model.js');
+var model = getApp().use('lib/model.js')
 
 Page({
   data:{
@@ -14,23 +14,7 @@ Page({
     });
     model.getResource(function(data) {
       var resources = data.data;
-
-      for(var i in resources)
-      {
-        //格式化日期
-        var date = resources[i].created_at;
-        date = getApp().format(date);
-        resources[i].crated_at = date;
-        // 截取字符串，确保title只在一行内显示
-        var title = resources[i].title;
-        title = title.substr(0, 15);
-        resources[i].title = title;
-        //截取字符串，确保subtitle只在一行内显示
-        var subtitle = resources[i].subtitle;
-        subtitle = subtitle.substr(0, 16);
-        resources[i].subtitle = subtitle;
-      }
-      
+      resources = me.dealData(resources)
       me.setData({
         resource: resources,
       })
@@ -52,5 +36,23 @@ Page({
     wx.navigateTo({
       url: '../detail/detail?info_id=' + e.currentTarget.id
     })
+  },
+  dealData: function(resources) {
+      for(var i in resources)
+      {
+        //格式化日期
+        var date = resources[i].created_at;
+        date = getApp().format(date);
+        resources[i].created_at = date;
+        // 截取字符串，确保title只在一行内显示
+        var title = resources[i].title;
+        title = title.substr(0, 15);
+        resources[i].title = title;
+        //截取字符串，确保subtitle只在一行内显示
+        var subtitle = resources[i].subtitle;
+        subtitle = subtitle.substr(0, 16);
+        resources[i].subtitle = subtitle;
+      }
+      return resources
   }
 })

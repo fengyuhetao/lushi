@@ -9,6 +9,7 @@
     <text class= "view-number">{{detail.view_count}}</text>
     <text class= "view-date">{{detail.created_at}}</text>
     <view class= "hr"></view>
+    <!--<view>{{content}}</view>-->
     <text class= "res-detail">{{"1. 本期乱斗是系统预设套牌,选择职业即可加入乱斗，无需祖卡。"}}</text>
     <text class= "res-detail">{{"2. 玩家祖卡-为为23张百变泽鲁斯+7张几页法术牌。"}}</text>
     <text class= "res-detail">{{"3. 双方的第一个回合都是从3费开始。"}}</text>
