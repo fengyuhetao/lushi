@@ -15,7 +15,6 @@ page{
 .view-icon {
     width: 55rpx;
     height: 25rpx;
-    float: 
     margin-left: 15rpx;
 }
 

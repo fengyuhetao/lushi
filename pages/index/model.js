@@ -16,7 +16,6 @@ function slide(callback) {
 function getResource(callback) {
     server.request({
         data: {
-            is_slide: 0,
             page: 1,
         },
         route: '/info',
@@ -26,7 +25,34 @@ function getResource(callback) {
     })
 }
 
+function getAnchorData(platform, callback) {
+    server.request({
+        data: {
+            "platform": platform
+        },
+        route: '/anchor/index',
+        success: function(data) {
+            callback(data)
+        }
+    })
+}
+
+function getDetail(info_id, callback) {
+    server.request({
+        data: {
+            "id": info_id
+        },
+        route: '/info/detail',
+        success: function(data) {
+            callback(data)
+        }
+    })
+}
+
+
 module.exports = {
     slide: slide,
-    getResource: getResource
+    getResource: getResource,
+    getAnchorData: getAnchorData,
+    getDetail: getDetail
 }

@@ -2,7 +2,7 @@
   <view>
     <swiper indicator-dots="true" autoplay="true" interval="3000" duration="500">
       <block wx:for="{{sliders}}">
-        <swiper-item>
+        <swiper-item id= "{{item.info_id}}" bindtap="viewDetail">
           <image src="{{item.slide_url}}" class= "swiper-item"/>
         </swiper-item>
         </block>
@@ -11,7 +11,7 @@
   <view class= "res">
     <block wx:for= "{{resource}}">
       <view class= "res-view" id= "{{item.info_id}}" bindtap= "viewDetail">
-        <image class= "res-image" mode= "scaleToFill" src="../assets/imgs/index/image1.png" />
+        <image class= "res-image" mode= "scaleToFill" src="{{item.thumbnail_url}}" />
         <view class= "res-title">{{item.title}}...</view>
         <text class= "res-summary">{{item.subtitle}}...</text>
         <text class= "res-date">{{item.crated_at}}</text>      
@@ -22,7 +22,7 @@
     </block>
   </view>
 
-  <view class="body-view">
+  <view>
     <loading hidden="false">
       加载中...
     </loading>

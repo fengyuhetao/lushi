@@ -14,19 +14,20 @@ Page({
     });
     model.getResource(function(data) {
       var resources = data.data;
-      console.log(resources);
-      
+
       for(var i in resources)
       {
-        //1472370681
+        //格式化日期
         var date = resources[i].created_at;
         date = getApp().format(date);
         resources[i].crated_at = date;
+        // 截取字符串，确保title只在一行内显示
         var title = resources[i].title;
         title = title.substr(0, 15);
         resources[i].title = title;
+        //截取字符串，确保subtitle只在一行内显示
         var subtitle = resources[i].subtitle;
-        subtitle = subtitle.substr(0, 20);
+        subtitle = subtitle.substr(0, 16);
         resources[i].subtitle = subtitle;
       }
       
@@ -48,9 +49,8 @@ Page({
     // 页面关闭
   },
   viewDetail: function(e) {
-    console.log(e);
     wx.navigateTo({
-      url: '../detail/detail'
+      url: '../detail/detail?info_id=' + e.currentTarget.id
     })
   }
 })

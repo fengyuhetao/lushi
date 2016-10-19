@@ -1,4 +1,4 @@
-var model = require("../zhubo_2/model.js")
+var model = require("../index/model.js")
 
 Page({
   data:{
@@ -24,7 +24,7 @@ Page({
     // 页面关闭
   },
   changetap: function(e) {
-    console.log(e);
+    // console.log(e);
     if(e.target.id == "kazu") {
       this.setData({"kazu_show": "block", "shiping_show": "none", "zixun_show": "none", "underline": "85"});
     } else if(e.target.id == "shiping") {

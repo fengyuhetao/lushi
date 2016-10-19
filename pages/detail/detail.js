@@ -1,9 +1,14 @@
+var model = require("../index/model.js")
+
 Page({
   data:{
     // text:"这是一个页面"
+    detail: []
   },
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
+    console.log(options.info_id)
+    this.loadDetail(options.info_id)
   },
   onReady:function(){
     // 页面渲染完成
@@ -16,5 +21,31 @@ Page({
   },
   onUnload:function(){
     // 页面关闭
+  },
+  loadDetail: function(info_id) {
+    var me = this;
+    model.getDetail(info_id, function(data) {
+      console.log(data.data)
+      //格式化日期
+      var date = data.data.created_at;
+      date = getApp().format(date);
+      data.data.created_at = date;
+      // 截取字符串，确保title只在一行内显示
+      var title = data.data.title;
+      title = title.substr(0, 15);
+      data.data.title = title;
+      me.setData({
+        "detail": data.data
+        })
+    })
+  },
+  videoErrorCallback: function(e) {
+    console.log('视频错误信息:')
+    console.log(e.detail.errMsg)
+  },
+  viewDetail: function(e) {
+    wx.navigateTo({
+      url: '../detail/detail?info_id=' + e.currentTarget.id
+    })
   }
 })

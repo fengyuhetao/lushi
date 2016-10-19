@@ -1,4 +1,4 @@
-var anchors = require('model.js');
+var anchors = require('../index/model.js');
 
 Page({
   data:{

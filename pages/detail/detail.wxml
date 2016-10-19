@@ -1,8 +1,13 @@
 <view>
-    <text class= "res-title">{{"[安德罗妮]会长与陈的对决!"}}</text>
+    <block wx:if="{{detail.type == 1}}">
+    <view>
+        <video style="width: 100%; height: 350rpx;" src= "{{detail.video_url}}" binderror="videoErrorCallback"/>
+    </view>
+    </block>
+    <text class= "res-title">{{detail.title}}...</text>
     <image class= "view-icon" src= "../assets/imgs/detail/view_number.png" />
-    <text class= "view-number">123</text>
-    <text class= "view-date">昨天</text>
+    <text class= "view-number">{{detail.view_count}}</text>
+    <text class= "view-date">{{detail.created_at}}</text>
     <view class= "hr"></view>
     <text class= "res-detail">{{"1. 本期乱斗是系统预设套牌,选择职业即可加入乱斗，无需祖卡。"}}</text>
     <text class= "res-detail">{{"2. 玩家祖卡-为为23张百变泽鲁斯+7张几页法术牌。"}}</text>
@@ -12,14 +17,12 @@
         <image class= "res-icon" src= "../assets/imgs/detail/detail.png" />
         <text class= "about-res">相关资讯</text>
         <view class= "about-res-all">
-            <view class= "about-res-detail">
-                <image src= "../assets/imgs/detail/image1.png"/>
-                <text>[新闻]好友争霸赛！友谊赛！友谊赛！...</text>
-            </view>
-            <view class= "about-res-detail">
-                <image src= "../assets/imgs/detail/image2.png"/>
-                <text>标题...</text>
-            </view>
+            <block wx:for="{{detail.related}}">
+                <view class= "about-res-detail" id= "{{item.info_id}}" bindtap="viewDetail">
+                    <image src= "{{item.thumbnail_url}}"/>
+                    <text>{{item.title}}</text>
+                </view>
+            </block>
         </view>
     </view>
 </view>
