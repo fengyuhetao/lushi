@@ -1,4 +1,4 @@
-var model = require('model.js');
+var model = getApp().use('/lib/model.js');
 
 Page({
   data:{
@@ -32,7 +32,7 @@ Page({
       }
       
       me.setData({
-        resource: data.data,
+        resource: resources,
       })
     })
   },

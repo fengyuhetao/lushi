@@ -1,4 +1,4 @@
-var anchors = require('../index/model.js');
+var anchors = getApp().use('lib/model.js');
 
 Page({
   data:{
@@ -15,7 +15,7 @@ Page({
   },
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
-    this.getAnchorData("");
+    this.getAnchors("");
   },
   onReady:function(){
     // 页面渲染完成
@@ -43,16 +43,16 @@ Page({
   },
   viewDetail: function(e) {
     wx.navigateTo({
-      url: '../zhubo/zhubo?anchor_id=' + e.target.id
+      url: '../zhubo/zhubo?user_id=' + e.currentTarget.id
     })
   },
-  getAnchorData: function(platform = 0) {
+  getAnchors: function(platform = 0) {
     if(platform == 0)
     {
       platform = "";
     }
     var me = this;
-    anchors.getAnchorData(platform, function(data){
+    anchors.getAnchors(platform, function(data){
       me.setData({
         anchorsData: data.data,
       })

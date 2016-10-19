@@ -1,4 +1,4 @@
-var model = require("../index/model.js")
+var model = getApp().use("lib/model.js")
 
 Page({
   data:{
