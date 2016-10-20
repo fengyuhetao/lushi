@@ -1,0 +1,24 @@
+<view>
+    <view class = "single-setting">
+        <view class = "setting-name">wayn_liu@yeah.net</view>
+        <view class= "synchro">同步卡组</view>
+    </view>
+    <view  class = "single-setting">
+        <view class = "setting-name">修改密码</view>
+        <image class= "right" src= "../assets/imgs/setting/right.png"/>
+    </view>
+    <view  class = "single-setting sepa">
+        <view class = "setting-name" style= "color: #705E90;">清理缓存</view>
+    </view>
+    <view  class = "single-setting">
+        <view class = "setting-name">意见反馈</view>
+        <image class= "right" src= "../assets/imgs/setting/right.png"/>
+    </view>
+    <view  class = "single-setting">
+        <view class = "setting-name">关于我们</view>
+        <image  class= "right" src= "../assets/imgs/setting/right.png"/>
+    </view>
+    <view  class = "single-setting sepa sign-out">
+        退出登录
+    </view>
+</view>

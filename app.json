@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/setting/setting",    
     "pages/anchor_2/anchor_2",    
     "pages/cardSet/cardSet",    
     "pages/index/index",    
@@ -8,7 +9,6 @@
     "pages/anchor/anchor",
     "pages/cardTankuang/cardTankuang",
     "pages/video/video",
-    "pages/sets/sets",
     "pages/detail/detail"
   ],
   "window":{
@@ -42,7 +42,7 @@
       "iconPath": "pages/assets/imgs/index/icon4.png",
       "selectedIconPath": "pages/assets/imgs/index/icon4_light.png"
     }, {
-      "pagePath": "pages/sets/sets",
+      "pagePath": "pages/setting/setting",
       "text": "设置",
       "iconPath": "pages/assets/imgs/index/icon5.png",
       "selectedIconPath": "pages/assets/imgs/index/icon5_light.png"      

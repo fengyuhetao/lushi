@@ -1,0 +1,51 @@
+page {
+    background-color: #39225A;
+    font-family: "等线";
+    color: white;
+    font-weight: bold;
+}
+
+.single-setting {
+    width: 100%;    
+    height: 120rpx;
+    background-color: #4C3674;
+    border-bottom: 1rpx solid #7353AD;
+}
+
+.setting-name {
+    display: inline-block;
+    height: 120rpx;
+    line-height: 120rpx;
+    padding-left: 40rpx;
+}
+
+.right {
+    width: 20rpx;
+    height: 35rpx;
+    display: inline-block;
+    position: relative;
+    top: 8rpx;
+    left: 500rpx;
+}
+
+.synchro {
+    display: inline-block;
+    width: 200rpx;
+    height: 70rpx; 
+    border: 2rpx solid white;
+    border-radius: 10rpx;
+    line-height: 70rpx;
+    text-align: center;
+    position: absolute;
+    top: 25rpx;
+    right: 40rpx;
+}
+
+.sepa {
+    margin-top: 40rpx;
+}
+
+.sign-out {
+    line-height: 120rpx;
+    text-align: center;
+}
