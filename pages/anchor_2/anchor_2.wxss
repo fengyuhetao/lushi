@@ -1,6 +1,7 @@
 page {
     background-color: #4C3674;
     font-family: "等线";
+    font-weight: 1.8;
 }
 
 .head {

@@ -2,7 +2,7 @@ page {
     background-color: #39225A;
     font-family: "等线";
     color: white;
-    font-weight: bold;
+    font-weight: 1.8;
 }
 
 .single-setting {
