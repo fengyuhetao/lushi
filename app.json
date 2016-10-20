@@ -1,11 +1,11 @@
 {
   "pages":[
-    "pages/zhubo_2/zhubo_2",    
+    "pages/anchor_2/anchor_2",    
     "pages/cardSet/cardSet",    
     "pages/index/index",    
     "pages/create/create",
     "pages/hero/hero",
-    "pages/zhubo/zhubo",
+    "pages/anchor/anchor",
     "pages/cardTankuang/cardTankuang",
     "pages/video/video",
     "pages/sets/sets",
@@ -32,7 +32,7 @@
       "iconPath": "pages/assets/imgs/index/icon2.png",
       "selectedIconPath": "pages/assets/imgs/index/icon2_light.png"      
     }, {
-      "pagePath": "pages/zhubo_2/zhubo_2",
+      "pagePath": "pages/anchor_2/anchor_2",
       "text": "主播",
       "iconPath": "pages/assets/imgs/index/icon3.png",
       "selectedIconPath": "pages/assets/imgs/index/icon3_light.png"      

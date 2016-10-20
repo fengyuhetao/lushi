@@ -8,19 +8,9 @@
         </block>
     </swiper>
   </view>
-  <view class= "res">
-    <block wx:for= "{{resource}}">
-      <view class= "res-view" id= "{{item.info_id}}" bindtap= "viewDetail">
-        <image class= "res-image" mode= "scaleToFill" src="{{item.thumbnail_url}}" />
-        <view class= "res-title">{{item.title}}...</view>
-        <text class= "res-summary">{{item.subtitle}}...</text>
-        <text class= "res-date">{{item.created_at}}</text>      
-      </view>
-      <block wx:if="{{index != resource.length - 1}}">
-        <view class= "hr"></view>
-      </block>
-    </block>
-  </view>
+  
+  <import src="../template/template"/>
+  <template is="detail" data="{{resource}}"/>
 
   <view>
     <loading hidden="false">

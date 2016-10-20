@@ -1,50 +1,12 @@
+@import "../template/template.wxss";
+
 page {
   background-color: #4C3674;
-  font-style: "微软黑体";
+  font-family: "微软黑体";
 }
+
 .swiper-item {
   width: 100%;
   height: 150px;
 }
 
-.res {
-  display: flex;
-  flex-direction: column;
-}
-.res-view {
-  position: relative;
-  display: block;
-  width: 100%;
-  margin-bottom: 20rpx;
-  margin-top: 20rpx;
-}
-.res-image {
-  width: 200rpx;
-  height: 160rpx;
-  float: left;
-  margin-right: 20rpx;
-  margin-left: 20rpx;
-}
-.res-title {
-  color: white;
-  font-size: 30rpx;
-}
-.res-summary {
-  color: #ACA4BC;
-  font-size: 25rpx;
-}
-.res-date {
-  color: #ACA4BC;
-  font-size: 25rpx;
-  position: absolute;
-  bottom: 0rpx;
-  left: 240rpx;
-}
-.hr{
-    height:2px;
-    width: 100%;
-    background-color: black;
-    border-top: #685195 solid 1px ;
-    border-bottom: #685195 solid 1px;
-    opacity:0.2;
-}

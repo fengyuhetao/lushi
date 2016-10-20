@@ -1,6 +1,8 @@
+@import "../template/template.wxss";
+
 page {
     background-color: #362057; 
-    font-family: "等线";
+    font-family: "微软黑体";
 }
 
 .logo {
@@ -65,7 +67,7 @@ page {
     color: white;
     height: 60rpx;
     line-height: 60rpx;
-    font-size: 35rpx;
+    font-size: 30rpx;
     text-align: center;
     width: 33%;
 }
@@ -80,42 +82,4 @@ page {
   margin-left: 15rpx;
   display: flex;
   flex-direction: column;
-}
-.res-view {
-  position: relative;
-  display: block;
-  width: 100%;
-  margin-bottom: 20rpx;
-  margin-top: 20rpx;
-}
-.res-image {
-  width: 200rpx;
-  height: 160rpx;
-  float: left;
-  margin-right: 20rpx;
-  margin-left: 10rpx;
-}
-.res-title {
-  display: block;
-  color: white;
-  font-size: 30rpx;
-}
-.res-summary {
-  color: #ACA4BC;
-  font-size: 25rpx;
-}
-.res-date {
-  color: #ACA4BC;
-  font-size: 25rpx;
-  position: absolute;
-  bottom: 0rpx;
-  left: 230rpx;
-}
-.hr{
-    height:2px;
-    width: 100%;
-    background-color: black;
-    border-top: #685195 solid 1px ;
-    border-bottom: #685195 solid 1px;
-    opacity:0.2;
 }

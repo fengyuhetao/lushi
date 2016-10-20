@@ -57,18 +57,7 @@
         </view>
     </view>
     <view style = "display: {{zixun_show}};">
-        <view class="res">
-        <block wx:for="{{resources}}">
-            <view class= "res-view" id= "{{item.info_id}}" bindtap= "viewDetail">
-                <image class= "res-image" mode= "scaleToFill" src="{{item.thumbnail_url}}" />
-                <text class= "res-title">{{item.title}}...</text>
-                <text class= "res-summary">{{item.subtitle}}...</text>
-                <text class= "res-date">{{item.created_at}}</text>      
-            </view>
-            <block wx:if="{{index != resources.length - 1}}">
-                <view class= "hr"></view>
-            </block>            
-        </block>
-        </view>
+        <import src="../template/template"/>
+        <template is="detail" data="{{resource}}"/>
     </view>
 </view>

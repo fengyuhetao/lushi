@@ -20,7 +20,7 @@
     </view>
     <view class= "cardset" style= "display: block">
         <block wx:for="{{cardSet}}">
-            <view class= "single-cardset" id= "{{cardset_id + 20}}" bindtap= "viewCardSetDetail">
+            <view class= "single-cardset" id= "{{cardset_id + 10}}" bindtap= "viewCardSetDetail">
                 <view class= "part-display">
                     <view class= "title">{{item.cardset_name}}</view>
                     <view class= "parameters">

@@ -4,13 +4,13 @@
         <image class= "{{style}}" src= "../assets/imgs/zhubo_2/drop.png" bindtap="dropContent"/>
         <view style= "display: {{is_show}};">
             <view class= "triangle"></view>
-            <view class= "rectangle">
-                <block wx:for="{{platform}}">
+            <view class= "rectangle">           
+                <block wx:for="{{platforms}}">
                     <block wx:if="{{index == current}}">
-                        <view bindtap="changeType" id= "{{platform_id[index]}}" class= "type" style= "{{current_type}}">{{item}}</view>
+                        <view bindtap="changeType" id= "{{item.key}}" class= "type" style= "{{current_type}}">{{item.value}}</view>
                     </block>
                     <block wx:if="{{index != current}}">
-                        <view bindtap="changeType" id= "{{platform_id[index]}}" class= "type" style= "{{not_current_type}}">{{item}}</view>
+                        <view bindtap="changeType" id= "{{item.key}}" class= "type" style= "{{not_current_type}}">{{item.value}}</view>
                     </block>                        
                 </block>
             </view>

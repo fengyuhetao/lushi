@@ -77,7 +77,7 @@ page{
 
 .about-res-detail image {
     width: 350rpx;
-    height: 246rpx;
+    height: 250rpx;
 }
 
 .about-res-detail text {

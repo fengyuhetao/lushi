@@ -1,3 +1,4 @@
 <view>
-视频
+  <import src="../template/template"/>
+  <template is="detail" data="{{resource}}"/>
 </view>

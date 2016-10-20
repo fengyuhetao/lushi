@@ -30,10 +30,6 @@ Page({
       var date = data.data.created_at
       date = getApp().format(date)
       data.data.created_at = date
-      // 截取字符串，确保title只在一行内显示
-      var title = data.data.title
-      title = title.substr(0, 15)
-      data.data.title = title;
       
       me.setData({
         "detail": data.data

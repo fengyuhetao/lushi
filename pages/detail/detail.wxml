@@ -4,7 +4,7 @@
         <video style="width: 100%; height: 350rpx;" src= "{{detail.video_url}}" binderror="videoErrorCallback"/>
     </view>
     </block>
-    <text class= "res-title">{{detail.title}}...</text>
+    <text class= "res-title">{{detail.title}}</text>
     <image class= "view-icon" src= "../assets/imgs/detail/view_number.png" />
     <text class= "view-number">{{detail.view_count}}</text>
     <text class= "view-date">{{detail.created_at}}</text>
