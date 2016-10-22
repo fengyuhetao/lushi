@@ -13,6 +13,7 @@ Page({
     "current": 30,
     // 当前选择的卡组类型 0：个人卡组   1：热门卡组
     "currentCardSetType": 0,
+    loading: true,
   },
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
@@ -22,7 +23,9 @@ Page({
     cardset.getRoles(function(data) {
       var roles = data.data.attrs.role
       roles.unshift({"key" : 30, "value": "全部"})
-      me.setData({"roles": roles})
+      me.setData({
+        "roles": roles,
+      })
     })
   },
   onReady:function(){
@@ -41,30 +44,30 @@ Page({
   changeCardSet: function(e) {
     if(e.target.id == "personal") {
       this.setData({"personalStyle": "color: white;", "hotStyle": "color: #7D63A4;", "currentCardSetType": 0});
-      this.loadCardSet(3)
+      this.loadCardSet({user_id: 3})
     } else {
-      this.setData({"personalStyle": "color: #7D63A4;", "hotStyle": "color: white;", "currentCardSetType": 1}); 
+      this.setData({"personalStyle": "color: #7D63A4;", "hotStyle": "color: white;", "currentCardSetType": 1});
       this.loadHotCardSet(1, 10)     
     }
   },
   // 加载个人卡组
-  loadCardSet: function(user_id) {
+  loadCardSet: function(params) {
     var me = this
-    cardset.getPersonalCardSet(user_id, function(data) {
-      console.log(data.data);
-      me.setData({"cardSet": data.data})
+    cardset.getPersonalCardSet(params, function(data) {
+      me.setData({"cardSet": data.data,loading: false})
     })
   },
   // 加载热门卡组
   loadHotCardSet: function(page, per_page) {
     var me = this
     cardset.getHotCardSet(page, per_page, function(data) {
-      me.setData({"cardSet": data.data})
+      me.setData({"cardSet": data.data, loading: false})
     })
   },
   // 切换当前选择的卡牌角色
   changeCurrent: function(e) {
-    this.setData({"current": e.currentTarget.dataset.id})
+    this.setData({"current": e.currentTarget.dataset.id, loading: true})
+    this.loadCardSet({user_id: 3, role: e.currentTarget.dataset.id})
   },
   // 查看卡组详细 跳哪去不知道
   viewCardSetDetail: function(e) {

@@ -4,12 +4,7 @@
         <text class= "hot" bindtap="changeCardSet" id= "hot" style= "{{hotStyle}}">热门卡组</text>
         <view class= "mine" style= "display: block;">
             <block wx:for="{{roles}}">
-                <block wx:if="{{item.key == current}}">
-                    <view data-id= "{{item.key}}" bindtap= "changeCurrent" class = "current">{{item.value}}</view>
-                </block>
-                <block wx:if="{{item.key != current}}">
-                    <view data-id= "{{item.key}}" bindtap= "changeCurrent">{{item.value}}</view>
-                </block>
+                <view data-id= "{{item.key}}" bindtap= "changeCurrent" class = "{{item.key == current ? 'current' : ''}}">{{item.value}}</view>
             </block>
         </view>
     </view>
@@ -18,7 +13,11 @@
         <image src= "../assets/imgs/kazu/background.png" style= "display: block; z-index: 100; width: 400rpx; height: 400rpx; margin: 200rpx auto 20rpx; border-radius: 10rpx; background-color: #4C3674; overflow: hidden;"/>
         <view style= "display: block; margin-left: 200rpx;">您的网络好像出问题了</view>
     </view>
-    <view class= "cardset" style= "display: block">
+
+    <loading hidden="{{!loading}}" >
+        正在加载...
+    </loading>
+    <view class= "cardset"  wx:if="{{!loading}}">
         <block wx:for="{{cardSet}}">
             <view class= "single-cardset" id= "{{cardset_id}}" bindtap= "viewCardSetDetail">
                 <view class= "part-display">
@@ -49,6 +48,7 @@
                 <view class= "hr"></view>
             </block>
         </block>
+        <!--
         <view class= "single-cardset" style= "position: relative; left: -200rpx;">
             <view class= "part-display">
                 <view class= "title">我的卡组一</view>
@@ -74,32 +74,32 @@
                 删除
             </view>
         </view>
-        <view class= "hr"></view>        
-        <view class= "single-cardset" style= "position: relative; left: -100rpx;">
-            <view class= "part-display">
-                <view class= "title">我的卡组一</view>
-                <view class= "parameters">
-                    <view class= "single-parameter">
-                        <image class= "suicong" src= "../assets/imgs/kazu/suicong.png"/><view>1121</view>
-                    </view>
-                    <view class= "single-parameter">
-                        <image class= "suicong" src= "../assets/imgs/kazu/fashu.png"/><view>1123</view>
-                    </view>
-                    <view class= "single-parameter">
-                        <image class= "suicong" src= "../assets/imgs/kazu/zhuangbei.png"/><view>1123</view>
-                    </view>
-                    <view class= "single-parameter">
-                        <image class= "suicong" src= "../assets/imgs/kazu/zaojia.png"/><view>1123</view>
+            <view class= "hr"></view>
+            <view class= "single-cardset" style= "position: relative; left: -100rpx;">
+                <view class= "part-display">
+                    <view class= "title">我的卡组一</view>
+                    <view class= "parameters">
+                        <view class= "single-parameter">
+                            <image class= "suicong" src= "../assets/imgs/kazu/suicong.png"/><view>1121</view>
+                        </view>
+                        <view class= "single-parameter">
+                            <image class= "suicong" src= "../assets/imgs/kazu/fashu.png"/><view>1123</view>
+                        </view>
+                        <view class= "single-parameter">
+                            <image class= "suicong" src= "../assets/imgs/kazu/zhuangbei.png"/><view>1123</view>
+                        </view>
+                        <view class= "single-parameter">
+                            <image class= "suicong" src= "../assets/imgs/kazu/zaojia.png"/><view>1123</view>
+                        </view>
                     </view>
                 </view>
+                <view class= "copy" id= "{{cardset_id + 10}}">
+                    复制
+                </view>
             </view>
-            <view class= "copy" id= "{{cardset_id + 10}}">
-                复制
-            </view>
-        </view>
-        <view class= "hr"></view>
-        <view class= "single-cardset">
-        </view>        
+            <view class= "hr"></view>
+            <view class= "single-cardset">
+        </view>       -->
         <view class= "hr"></view>
         <image class= "create" bindtap="addNewCardSet" src= "../assets/imgs/kazu/create.png" />
     </view>
