@@ -4,11 +4,11 @@
         <text class= "hot" bindtap="changeCardSet" id= "hot" style= "{{hotStyle}}">热门卡组</text>
         <view class= "mine" style= "display: block;">
             <block wx:for="{{roles}}">
-                <block wx:if="{{index == current}}">
-                    <view id= "{{index}}" bindtap= "changeCurrent" class = "current">{{item}}</view>
+                <block wx:if="{{item.key == current}}">
+                    <view data-id= "{{item.key}}" bindtap= "changeCurrent" class = "current">{{item.value}}</view>
                 </block>
-                <block wx:if="{{index != current}}">
-                    <view id= "{{index}}" bindtap= "changeCurrent">{{item}}</view>
+                <block wx:if="{{item.key != current}}">
+                    <view data-id= "{{item.key}}" bindtap= "changeCurrent">{{item.value}}</view>
                 </block>
             </block>
         </view>
@@ -20,7 +20,7 @@
     </view>
     <view class= "cardset" style= "display: block">
         <block wx:for="{{cardSet}}">
-            <view class= "single-cardset" id= "{{cardset_id + 10}}" bindtap= "viewCardSetDetail">
+            <view class= "single-cardset" id= "{{cardset_id}}" bindtap= "viewCardSetDetail">
                 <view class= "part-display">
                     <view class= "title">{{item.cardset_name}}</view>
                     <view class= "parameters">
@@ -38,10 +38,10 @@
                         </view>
                     </view>
                 </view>
-                <view class= "edit" id= "{{cardset_id + 10}}" bindtap="editCardSet">
+                <view class= "edit" id= "{{cardset_id + 11}}" bindtap="editCardSet">
                     编辑
                 </view>
-                <view class= "delete" id= "{{cardset_id + 10}}" bindtap="dealCardSet">
+                <view class= "delete" id= "{{cardset_id + 11}}" bindtap="dealCardSet">
                     删除
                 </view>
             </view>

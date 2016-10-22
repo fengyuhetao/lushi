@@ -5,9 +5,13 @@ Page({
     // text:"这是一个页面"
     "personalStyle": "color: white;",
     "hotStyle": "color: #7D63A4;",
+    // 卡组 可以是个人卡组，也可以是热门卡组，看选哪个
     "cardSet": [],
-    "roles": ["全部", "猎人", "法师", "牧师", "潜行者", "萨满", "战士", "术士", "圣骑士"],
-    "current": 0,
+    // 卡牌的角色
+    "roles": [],
+    // 当前选择的卡牌角色
+    "current": 30,
+    // 当前选择的卡组类型 0：个人卡组   1：热门卡组
     "currentCardSetType": 0,
   },
   onLoad:function(options){
@@ -15,6 +19,11 @@ Page({
     // note: 传入user_id，当前不知道具体的user_id如何获取，暂时先用用3替代
     var me = this
     this.loadCardSet(3);
+    cardset.getRoles(function(data) {
+      var roles = data.data.attrs.role
+      roles.unshift({"key" : 30, "value": "全部"})
+      me.setData({"roles": roles})
+    })
   },
   onReady:function(){
     // 页面渲染完成
@@ -28,6 +37,7 @@ Page({
   onUnload:function(){
     // 页面关闭
   },
+  // 切换卡组类型  个人卡组和热门卡组
   changeCardSet: function(e) {
     if(e.target.id == "personal") {
       this.setData({"personalStyle": "color: white;", "hotStyle": "color: #7D63A4;", "currentCardSetType": 0});
@@ -37,6 +47,7 @@ Page({
       this.loadHotCardSet(1, 10)     
     }
   },
+  // 加载个人卡组
   loadCardSet: function(user_id) {
     var me = this
     cardset.getPersonalCardSet(user_id, function(data) {
@@ -44,34 +55,35 @@ Page({
       me.setData({"cardSet": data.data})
     })
   },
+  // 加载热门卡组
   loadHotCardSet: function(page, per_page) {
     var me = this
     cardset.getHotCardSet(page, per_page, function(data) {
       me.setData({"cardSet": data.data})
     })
   },
+  // 切换当前选择的卡牌角色
   changeCurrent: function(e) {
-    if(this.data.currentCardSet == 0)
-    {
-      this.setData({"current": e.target.id})
-    } else {
-      this.setData({"current": e.target.id})
-    }  
+    this.setData({"current": e.currentTarget.dataset.id})
   },
+  // 查看卡组详细 跳哪去不知道
   viewCardSetDetail: function(e) {
-    // 角色共有十个选择，为避免ID的冲突，显示页面时，将所有的卡组的id+10，所以这里卡组的id应该是显示页面获取的id值减去角色的可供选择个数，也就是10个
-    var cardsest_id = e.currentTarget.id - this.data.roles.length
+    // 未完待续
+    var cardsest_id = e.currentTarget.id
   },
+  // 添加新的卡组
   addNewCardSet: function() {
     wx.navigateTo({
       url: '../create/create'
     })
   },
+  /// 删除卡组
   dealCardSet: function(e) {
     // 未完待续
     console.log(e)
     // cardset.dealCardSet()
   },
+  // 编辑卡组
   editCardSet: function(e) {
     // 未完待续
     console.log(e)
