@@ -38,10 +38,10 @@
                         </view>
                     </view>
                 </view>
-                <view class= "edit">
+                <view class= "edit" id= "{{cardset_id + 10}}" bindtap="editCardSet">
                     编辑
                 </view>
-                <view class= "delete">
+                <view class= "delete" id= "{{cardset_id + 10}}" bindtap="dealCardSet">
                     删除
                 </view>
             </view>
@@ -67,10 +67,10 @@
                     </view>
                 </view>
             </view>
-            <view class= "edit">
+            <view class= "edit" id= "{{cardset_id + 10}}" bindtap="editCardSet">
                 编辑
             </view>
-            <view class= "delete">
+            <view class= "delete" id= "{{cardset_id + 10}}" bindtap="dealCardSet">
                 删除
             </view>
         </view>
@@ -93,7 +93,7 @@
                     </view>
                 </view>
             </view>
-            <view class= "copy">
+            <view class= "copy" id= "{{cardset_id + 10}}">
                 复制
             </view>
         </view>
@@ -101,7 +101,7 @@
         <view class= "single-cardset">
         </view>        
         <view class= "hr"></view>
-        <image class= "create" src= "../assets/imgs/kazu/create.png" />
+        <image class= "create" bindtap="addNewCardSet" src= "../assets/imgs/kazu/create.png" />
     </view>
 
 </view>

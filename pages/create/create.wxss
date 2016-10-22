@@ -139,13 +139,25 @@ page {
 }
 
 .content .left .all-hero .single-hero text {
-    font-size: 25rpx;
+    font-size: 10rpx;
     display: block;
     text-align: center;
     color: #352057;
     width: 140rpx;
     line-height: 40rpx;
-    height: 40rpx;
+    height: 80rpx;
+}
+
+.page {
+    text-align: center;
+}
+
+.pre {
+    margin-right: 20rpx;
+}
+
+.content .right {
+    min-height: 1000rpx;
 }
 
 .content .right .sm-hero {
@@ -223,8 +235,8 @@ page {
 }
 
 .content .right .footer .reset {
-    color: #382259;
     display: inline-block;
+    color: #382259;
     border: 4rpx solid #362057;
     font-size: 30rpx;
     width: 100rpx;
@@ -232,7 +244,7 @@ page {
     text-align: center;
     line-height: 40rpx;
     padding-top: 6rpx;
-    margin-left: 70rpx;
+    margin-left: 50rpx;
 }
 
 .content .right .footer .end {

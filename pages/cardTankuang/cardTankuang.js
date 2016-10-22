@@ -32,5 +32,10 @@ Page({
       this.setData({"kuangye_show": "none", "biaozhun_show": "block", "kuangye_back": "#362057", "biaozhun_back": "#A298B2", 
       "kuangye_text": "white", "biaozhun_text": "#382259"});      
     }
+  },
+  viewDetail: function() {
+    wx.navigateTo({
+      'url': "../hero/hero"
+    })
   }
 })

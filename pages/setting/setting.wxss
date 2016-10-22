@@ -13,6 +13,7 @@ page {
 }
 
 .setting-name {
+    font-size: 35rpx;
     display: inline-block;
     height: 120rpx;
     line-height: 120rpx;

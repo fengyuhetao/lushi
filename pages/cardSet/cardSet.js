@@ -13,6 +13,7 @@ Page({
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
     // note: 传入user_id，当前不知道具体的user_id如何获取，暂时先用用3替代
+    var me = this
     this.loadCardSet(3);
   },
   onReady:function(){
@@ -60,5 +61,19 @@ Page({
   viewCardSetDetail: function(e) {
     // 角色共有十个选择，为避免ID的冲突，显示页面时，将所有的卡组的id+10，所以这里卡组的id应该是显示页面获取的id值减去角色的可供选择个数，也就是10个
     var cardsest_id = e.currentTarget.id - this.data.roles.length
+  },
+  addNewCardSet: function() {
+    wx.navigateTo({
+      url: '../create/create'
+    })
+  },
+  dealCardSet: function(e) {
+    // 未完待续
+    console.log(e)
+    // cardset.dealCardSet()
+  },
+  editCardSet: function(e) {
+    // 未完待续
+    console.log(e)
   }
 })

@@ -12,7 +12,7 @@
                 <text class= "single-tab">费用</text>
                 <text class= "single-tab-last">类型</text>
             </view>
-            <view class= "tab-choose" style= "display: block;">
+            <view class= "tab-choose" style= "display: none;">
                 <text class= "single-choose" style= "background-color: #898BDB; color: white;">全部</text>
                 <text class= "single-choose">免费</text>
                 <text class= "single-choose">普通</text>
@@ -46,42 +46,16 @@
             </view>
             <view style= "clear: both"></view>
             <view class= "all-hero">
-                <view class= "single-hero">
-                    <image src= "../assets/imgs/create/hero.png" />
-                    <text>德鲁伊</text>
+                <block wx:for="{{cards}}">
+                    <view class= "single-hero" id="{{item.card_id}}-{{item.rarity}}" bindtap="addCard">
+                    <image src= "{{item.pic_url}}" />
+                    <text>{{item.name}}</text>
                 </view>
-                <view class= "single-hero">
-                    <image src= "../assets/imgs/create/hero.png" />
-                    <text>猎人</text>
+                </block>
+                <view class="page">
+                    <text bindtap="loadCards" id="pre" class="pre">上一页</text>
+                    <text bindtap="loadCards" id="next" class="next">下一页</text>
                 </view>
-                <view class= "single-hero">
-                    <image src= "../assets/imgs/create/hero.png" />
-                    <text>法师</text>
-                </view>
-                <view class= "single-hero">
-                    <image src= "../assets/imgs/create/hero.png" />
-                    <text>德鲁伊</text>
-                </view>
-                <view class= "single-hero">
-                    <image src= "../assets/imgs/create/hero.png" />
-                    <text>猎人</text>
-                </view>
-                <view class= "single-hero">
-                    <image src= "../assets/imgs/create/hero.png" />
-                    <text>法师</text>
-                </view>
-                <view class= "single-hero">
-                    <image src= "../assets/imgs/create/hero.png" />
-                    <text>德鲁伊</text>
-                </view>
-                <view class= "single-hero">
-                    <image src= "../assets/imgs/create/hero.png" />
-                    <text>猎人</text>
-                </view>
-                <view class= "single-hero">
-                    <image src= "../assets/imgs/create/hero.png" />
-                    <text>法师</text>
-                </view>            
             </view>
         </view>
         <view class= "right">
@@ -127,9 +101,9 @@
                 </view>
             </view>
             <view class= "footer">
-                <text class= "kazu">0/3</text>
-                <text class= "reset">重置</text>
-                <view class= "end">完成</view>
+                <text class="kazu">{{haveChooseCardsNumber}}/30</text>
+                <text class="reset">重置</text>
+                <view class= "end" bindtap="judgeIsOver">完成</view>
             </view>
         <view>
     </view>
