@@ -1,12 +1,12 @@
 {
   "pages":[
+    "pages/hero/hero",    
+    "pages/cardTankuang/cardTankuang",    
     "pages/index/index",        
     "pages/create/create",
-    "pages/cardTankuang/cardTankuang",
     "pages/setting/setting",    
     "pages/anchor_2/anchor_2",    
     "pages/cardSet/cardSet",    
-    "pages/hero/hero",
     "pages/anchor/anchor",
     "pages/video/video",
     "pages/detail/detail"

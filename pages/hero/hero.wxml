@@ -47,25 +47,25 @@
         <text>德鲁伊</text>
     </view>
     <view class= "cardgroup">
-        <view class= "single-card">
+        <view class= "single-card" bindtap="viewInfo">
             <view class= "card-need">0</view>
             <image class= "pentagon" src= "../assets/imgs/hero/pentagon.png" />
             <image class= "sm-hero" src= "../assets/imgs/hero/sm_hero.png" />
             <view class= "card-number">2</view>
         </view>
-        <view class= "single-card">
+        <view class= "single-card" bindtap="viewInfo">
             <view class= "card-need">0</view>
             <image class= "pentagon" src= "../assets/imgs/hero/pentagon.png" />
             <image class= "sm-hero" src= "../assets/imgs/hero/sm_hero.png" />
             <view class= "card-number">2</view>
         </view>
-        <view class= "single-card">
+        <view class= "single-card" bindtap="viewInfo">
             <view class= "card-need">0</view>
             <image class= "pentagon" src= "../assets/imgs/hero/pentagon.png" />
             <image class= "sm-hero" src= "../assets/imgs/hero/sm_hero.png" />
             <view class= "card-number">2</view>
         </view>
-        <view class= "single-card">
+        <view class= "single-card" bindtap="viewInfo">
             <view class= "card-need">0</view>
             <image class= "pentagon" src= "../assets/imgs/hero/pentagon.png" />
             <image class= "sm-hero" src= "../assets/imgs/hero/sm_hero.png" />
@@ -109,4 +109,15 @@
             <view class= "statis-number">2</view>
         </view>
     </view>                                                                                                                         
+</view>
+<view class="hero-detail" style="display: {{info}}" bindtap="closeInfo">
+    <view class="image">
+        <image src= "../assets/imgs/hero/bear.png"/>    
+    </view>
+    <view class="resume">
+        <text class="name">月火术</text>
+        <text class="rarity">免费</text>    
+    </view>
+    <view class="origin">卡包：经典/合成</view>
+    <view class="desc">鱼人宝宝实在是太可爱了，以至于谁见了都想抱一抱，结果因为窒息所导致的死亡率极高。</view>
 </view>

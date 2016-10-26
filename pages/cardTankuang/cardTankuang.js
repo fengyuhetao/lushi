@@ -35,7 +35,7 @@ Page({
   },
   viewDetail: function() {
     wx.navigateTo({
-      'url': "../hero/hero"
+      'url': "../create/create"
     })
   }
 })

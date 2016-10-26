@@ -37,10 +37,10 @@
                         </view>
                     </view>
                 </view>
-                <view class= "edit" id= "{{cardset_id + 11}}" bindtap="editCardSet">
+                <view class= "edit" id= "{{cardset_id}}" bindtap="editCardSet">
                     编辑
                 </view>
-                <view class= "delete" id= "{{cardset_id + 11}}" bindtap="dealCardSet">
+                <view class= "delete" id= "{{cardset_id}}" bindtap="dealCardSet">
                     删除
                 </view>
             </view>
